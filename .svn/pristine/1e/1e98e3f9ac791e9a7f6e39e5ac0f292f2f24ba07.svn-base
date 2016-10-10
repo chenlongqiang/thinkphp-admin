@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午10:10
+ */
+
+namespace Common\Model;
+
+use Think\Model;
+
+/**
+ * model 基类
+ */
+class BaseModel extends Model {
+    
+}

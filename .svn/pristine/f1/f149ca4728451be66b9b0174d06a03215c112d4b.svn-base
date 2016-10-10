@@ -1,0 +1,91 @@
+<?php
+/**
+ *
+ * 日增息相关红包计算发放处理
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/23
+ */
+namespace InviteRed\Logic;
+use Think\Model;
+
+class DailyGainLogic extends Model
+{
+    const EVENT_KEY = '';//对应活动标识
+    const MAX_BONUS_DAY = '30';//计算注册到MAX_BONUS_DAY以内的投资收益
+    const PENG_STATUS = '6';//红包表 待审核字段标识
+
+    /**
+     * 对于符合条件的增加相关红包记录
+     */
+    public function run($uid,$invest_time,$end_time,$start_rate,$days_rate,$invest_money)
+    {
+        $r = $this->_checkInvite($uid);
+        if (!$r) return array ('status'=>false,'msg'=>'该用户针对该活动没有邀请关系');
+
+        $shareDays = $this->_getShareDays($r['c_time'],$invest_time,$end_time);
+        if (!$shareDays) return array ('status'=>false,'msg'=>'该笔投资不再获得收益');
+
+        $bonusLists = $this->_getShareBonus($start_rate,$days_rate,$invest_money,$invest_time,$shareDays);
+        return $this->_sendRed($bonusLists);
+    }
+
+    /**
+     * 检测当前投资用户是否有邀请
+     */
+    private function _checkInvite($uid)
+    {
+        return D('JinrPartner/FiftyDetail')->where(array(
+            'invite_u_id' => $uid,
+            'event_key' => self::EVENT_KEY,
+        ))->field('c_time,u_id')->find();
+    }
+
+    /*
+     * 根据投资时间以及注册时间 来计算当前投资实际能够共享多少天的收益
+     */
+    private function _getShareDays($register_time,$invest_time,$end_time)
+    {
+        if ($invest_time > $register_time) return false;
+        $investDays = floor((strtotime($end_time) - strtotime($invest_time))/(60*60*24));//投资天数
+
+        $maxShareDays = self::canGetMaxShareDays($register_time);//可以共享收益的天数
+
+        return min($investDays,$maxShareDays);
+    }
+
+    /**
+     * 根据注册时间 获取用户当前还可以获得最多多少天的分享收益
+     */
+    public static function canGetMaxShareDays($register_time)
+    {
+        $register_days = floor((time() - strtotime($register_time))/(60*60*24));//获取用户已经注册时间 days
+        $result = self::MAX_BONUS_DAY - $register_days;
+        return $result > 0 ? $result : 0 ;
+    }
+
+    /**
+     * 获取需要放红包的收益
+     */
+    private function _getShareBonus($start_rate,$days_rate,$invest_money,$invest_time,$days)
+    {
+        $return = array();
+        for($i=1;$i <= $days;$i++ ) {
+            $c_time = date('Y-m-d H:i:s',strtotime("+ {$i} days",strtotime($invest_time))); //计算出创建时间
+            $money = (($i - 1) * $days_rate + $start_rate ) * $invest_money;//计算出分享收益
+            $return[] = array('c_time'=>$c_time,'money'=>$money);
+        }
+        return $return;
+    }
+
+    /*
+     * 发送红包 添加对应数据到红包表中
+     */
+    private function _sendRed($lists)
+    {
+
+        if (!empty($lists) && is_array($lists)) foreach ($lists as $r) {
+            D('JinrPartner/CashDetail')->add();
+        }
+    }
+}

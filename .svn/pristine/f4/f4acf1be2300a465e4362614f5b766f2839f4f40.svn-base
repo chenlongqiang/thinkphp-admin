@@ -1,0 +1,166 @@
+<?php
+/**
+ * 分红处理模型
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/22
+ * Time: 上午10:00
+ */
+
+namespace Common\Model;
+use Common\Base\BaseModel;
+
+class YieldModel extends BaseModel
+{
+    protected $dbName = 'hbdev';
+    protected $tablePrefix = 'hb_';
+    
+    const GET_MONEY_OK = 3; //现金已获得
+    const PENDING_STATUS = 6;//状态为6的 表示还需后台审核
+
+    /**
+     * @param $id cash_detail 主键id
+     * @param $status
+     */
+    public function BonusHandle($id)
+    {
+        
+        $cashDetail = D('Jinpartner/CashDetail')->where(
+            array(
+                'id'    =>array('eq',$id),
+                'status'=>array('eq',self::PENDING_STATUS)
+            )
+        )->field('uid,money')->find();
+
+        if (!$cashDetail) return false;//找不到信息 或者 是改信息是不需要审核的现金分红
+        
+        $this->startTrans();//开启事务
+        $r = $this->_userInfoHandle($cashDetail['uid'],$cashDetail['money']);
+
+        $update_result = D('Jinpartner/CashDetail')->update(array('status'=>self::GET_MONEY_OK),array('id'=>$id));
+        if ($r && $update_result !== false)
+        {
+            $this->commit(); //提交事务
+            return true;
+        } else {
+            $this->rollback();  //事务回滚
+            return false;
+        }
+        
+    }
+    
+	/**
+     * _addUserDaysIncome 与 _addUserIncome 方法的集合
+     * 处理用户相关红包收益
+     * @param $uid 用户id
+     * @param $money 
+     */
+    //
+    private function _userInfoHandle($uid,$money)
+    {
+        try
+        {
+            $res    = $this->_addUserDaysIncome($uid,$money);
+            $r      = $this->_addUserIncome($uid,$money);
+            if ($res && $r)  {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        catch(\Think\Exception $e)
+        {
+            return false;
+        }
+    }
+    
+	/**
+     * 添加到用户收益表
+     * @param $uid 用户id
+     * @param $money 
+     * @param $status
+     */
+    private function _addUserIncome($uid,$money)
+    {
+		$uid 		= intval($uid);
+		$yieldInfo 	= M("Yield")->where(array('uid'=>$uid))->find();
+		if ($yieldInfo)
+		{
+		    //对应更新数据
+			$updateInfo['hb_cash'] = array('exp','hb_cash + '.$money );
+            $updateInfo['yield_money_new'] = array('exp','yield_money_new + '.$money );
+            $updateInfo['yield_money'] = array('exp','yield_money + '.$money );
+            $updateInfo['u_time'] = date('Y-m-d H:i:s');
+			
+			$r = M("Yield")->update($updateInfo,array('u_id'=>$uid));
+		}
+		else 
+		{
+		    //添加数据
+			$r = M("Yield")->addOne( 
+				array(
+					'u_id' => $uid,
+					'yield_money' => $money,
+					'yield_money_new' => $money,
+					'hb_cash' => $money,
+					'c_time' => date('Y-m-d H:i:s'),
+					'u_time' => date('Y-m-d H:i:s')
+				)
+			);
+		}
+		
+		return $r !== false;
+    }
+	
+    /**
+     * 更新每日收益表数据
+     * @param $uid 用户id
+     * @param $money 
+     * @param $status
+     */
+    private function _addUserDaysIncome($uid,$money)
+    {
+        $str = 5.78;//收益率
+		$dayYieldWhere['c_time'] = array('between',array(date('Y-m-d'),date('Y-m-d 23:59:59')));
+        $dayYieldWhere['u_id']   = $uid;
+		
+		$id = M('DayYield')->where($dayYieldWhere)->getField('id');
+		
+		if ($id) 
+		{
+			$updateInfo = array(
+				'u_time'        => date('Y-m-d H:i:s'),
+				'yield_money'   => array('exp','yield_money + ' .(float)$money),
+				'hb_cash'       => array('exp','hb_cash +' .(float)$money),
+			);
+            $r = M('DayYield')->update($updateInfo,array('id'=>$id));
+		}
+		else
+		{
+			$dayYieldData = array(
+				'u_id' 			=> $uid,
+				'yield' 		=> self::getDayRate($str),
+				'yield_money'	=> (float)$money,
+				'hb_cash' 		=> (float)$money,
+				'c_time' 		=> date('Y-m-d H:i:s'),
+				'u_time' 		=> date('Y-m-d H:i:s')
+			);
+            $r = M('DayYield')->addOne($dayYieldData);
+		}
+        
+		return $r !== false;
+        
+    }
+	
+	/**
+     * 获取每日利率 从hbdev中拷贝 
+     * @param $str
+     */
+	private static function getDayRate($str)
+	{
+		$yield = floatval($str);
+        $rate = $yield + 1; //年化利率
+        return pow($rate, 1 / YEAR_COUNT) - 1;
+	}
+
+}

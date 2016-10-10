@@ -1,0 +1,106 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午10:10
+ */
+
+namespace Admin\Model;
+
+use Common\Model\BaseModel;
+
+class MenuModel extends BaseModel
+{
+    const STATUS_ON = 1;
+    const STATUS_OFF = 2;
+    
+    const LEVEL_FIRST = 1;
+    const LEVEL_SECOND = 2;
+    const LEVEL_THIRD = 3;
+    
+    //顶级菜单pid
+    const DEFAULT_PID = 0;
+    
+    protected $_auto = array(
+        array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+        array('u_time', 'gmt_time', self::MODEL_BOTH, 'function'),
+    );
+
+    /**
+     * 组装目录数据
+     * 技巧:先从最末层往上层拼数据,所以 $menus 为层级倒序的数据
+     * @param $menus
+     * @return mixed
+     */
+    public static function organizeMenu($menus)
+    {
+        $lists = $menus;
+        //菜单整理
+        foreach ($menus as $k => $menu) {
+            $pid_key = array_search($menu['pid'], array_column($menus, 'id'));
+            //若pid的menu不存在,且pid不为0(即该目录不是顶级目录)则抛弃该menu
+            if ($pid_key === false) {
+                if ($menu['pid'] != MenuModel::DEFAULT_PID) {
+                    array_pull($lists, $k);
+                }
+                continue;
+            }
+            //把菜单放到相应的pid下
+            $list = array_pull($lists, $k);
+            array_set($lists, $pid_key.'.sub.'.self::getSubArrayKey($menu['pid']), $list);
+        }
+        return $lists;
+    }
+
+    //获取menu该id列,目前key的位置
+    private static $sub_keys = array();
+    private static function getSubArrayKey($id)
+    {
+        if (!isset(self::$sub_keys[$id])) {
+            self::$sub_keys[$id] = 0;
+            return 0;
+        } else {
+            return ++self::$sub_keys[$id];
+        }
+    }
+
+    /**
+     * 获取某个用户的目录数据
+     * @param $admin_id
+     * @return mixed
+     */
+    public static function getAdminMenu($admin_id)
+    {
+        return M('Admin')->alias('a')
+            ->join('LEFT JOIN jr_admin_role ar ON a.id = ar.admin_id')
+            ->join('LEFT JOIN jr_role r ON ar.role_id = r.id')
+            ->join('LEFT JOIN jr_role_menu rm ON r.id = rm.role_id')
+            ->join('LEFT JOIN jr_menu m ON rm.menu_id = m.id')
+            ->where(array(
+                'a.id' => array('eq', $admin_id),
+                'm.status' => array('eq', self::STATUS_ON)
+            ))
+            ->order('m.level desc,m.sort asc,m.id asc')
+            ->field('distinct m.id,m.name,m.pid,m.path,m.icon')
+            ->select();
+    }
+    
+    //获取用户权限目录列表
+    public static function getAuthMenu($admin_id)
+    {
+        $admin = D('Admin')->getOne(array('id' => $admin_id));
+        if (in_array($admin['is_manager'], array(AdminModel::TYPE_ROOT, AdminModel::TYPE_MANAGER))) {
+            //管理员
+            $all_menus = D('Menu')->getList(array('status' => self::STATUS_ON), 1, -1, 'level desc,sort asc,id asc', 'id,name,pid', false);
+            $menu = $all_menus['list'];
+        } elseif ($admin['is_manager'] == AdminModel::TYPE_USER) {
+            //普通后台用户
+            $menu = self::getAdminMenu($admin_id);
+        } else {
+            return false;
+        }
+        return self::organizeMenu($menu);
+    }
+    
+}

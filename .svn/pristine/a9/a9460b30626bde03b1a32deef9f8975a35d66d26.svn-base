@@ -1,0 +1,154 @@
+<li class="mli">
+    <h1 class="mk mk4"><img src="__PUBLIC__/static/partner/images/ms4.jpg" alt=""/><span>赚钱攻略</span></h1>
+    <div class="detail  dtt" style="display:none;">
+        <ul class="gonglue-list  zqgl-list">
+            <li>
+                <h1><span>如何成为鲸鱼合伙人？</span></h1>
+                <div class="detail" style="display:none;">
+                    <p>1、所有投资经验值≥5000的鲸鱼宝新老用户均可成为鲸鱼合伙人。投资经验值越高，合伙人等级越高。</p>
+                    <form name="form1" method="post" action="" onSubmit="return false">
+                        <table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <th>投资经验值<span>X</span></td>
+                                <th>合伙人等级</td>
+                            </tr>
+                            <tr>
+                                <td>5,000≤<span>X</span>＜20,000</td>
+                                <td>LV1</td>
+                            </tr>
+                            <tr>
+                                <td>20,000≤<span>X</span>＜50,000</td>
+                                <td>LV2</td>
+                            </tr>
+                            <tr>
+                                <td><span>X</span>≥50,000</td>
+                                <td>LV3</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <p>2、用户通过【鲸鱼合伙人】活动页面投资定期产品，投资多少即可积累多少投资经验值。</p>
+                    <p>3、老用户有礼（8月22日之前完成注册的）：为回馈鲸鱼宝老用户，活动期间，老用户只要进入活动页面点击加入鲸鱼合伙人，即可获得经验值奖励，直接成为鲸鱼合伙人。 具体奖励如下：</p>
+                    <form  name="form1" method="post" action="" onSubmit="return false">
+                        <table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <th>老用户定期账户金额Y</td>
+                                <th>奖励投资经验值</td>
+                            </tr>
+                            <tr>
+                                <td><span>Y</span>＜50,000</td>
+                                <td>5,000</td>
+                            </tr>
+                            <tr>
+                                <td>5,000S<span>Y</span>＜20,000</td>
+                                <td>20,000</td>
+                            </tr>
+                            <tr>
+                                <td><span>X</span>≥20,000</td>
+                                <td>50,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <h1><span>鲸鱼合伙人的分红如何计算？</span></h1>
+                <div class="detail" style="display:none;">
+                    <h2>只有通过【鲸鱼合伙人】活动页面投资的金额，才产生分红。</h2>
+                    <p>1、鲸鱼合伙人的分红= 一级投资人投资额X分红比例+二级投资人投资额X分红比例+三级投资人投资额X分红比例。</p>
+                    <p>2、分红比例由鲸鱼合伙人的等级和投资人与合伙人的关系层级共同决定。</p>
+                    <form  name="form1" method="post" action="" onSubmit="return false">
+                        <table class="tblist  tblist2-1" cellspacing="1" align="center" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <th class="biao"></td>
+                                <th>LV1</td>
+                                <th>LV2</td>
+                                <th>LV3</td>
+                            </tr>
+                            <tr>
+                                <td class="kb">一级投资人</td>
+                                <td>1%</td>
+                                <td>1.1%</td>
+                                <td>1.2%</td>
+                            </tr>
+                            <tr>
+                                <td class="kb">二级投资人</td>
+                                <td>0.6%</td>
+                                <td>0.7%</td>
+                                <td>0.8%</td>
+                            </tr>
+                            <tr>
+                                <td class="kb">三级投资人</td>
+                                <td>0.4%</td>
+                                <td>0.5%</td>
+                                <td>0.8%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <p>举个例子：假如每个投资人都投资10000元，那么获得分红如下图</p>
+                    <form id="statue" name="form1" method="post" action="" onSubmit="return false">
+                        <table class="tblist  tblist2-1  tblist2-2" cellspacing="1" align="center" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <th></td>
+                                <th><ol>LV1</ol><ol>获得分红</ol></td>
+                                <th><ol>LV2</ol><ol>获得分红</ol></td>
+                                <th><ol>LV3</ol><ol>获得分红</ol></td>
+                            </tr>
+                            <tr>
+                                <td class="kb"><ol>一级投资人</ol><ol>投1万</ol></td>
+                                <td>100</td>
+                                <td>110%</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td class="kb"><ol>二级投资人</ol><ol>投1万</ol></td>
+                                <td>60</td>
+                                <td>70</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td class="kb"><ol>三级投资人</ol><ol>投1万</ol></td>
+                                <td>40</td>
+                                <td>50</td>
+                                <td>60</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <h1><span>友情提示！</span></h1>
+                <div class="detail" style="display:none;">
+                    <p>1、活动期间，用户只有通过<span>【鲸鱼合伙人】活动页面</span>投资鲸鱼宝定期产品，方可获得相应数量的投资经验值。</p>
+                    <p>2、用户所邀请的投资人必须通过用户的<span>专属二维码或邀请链接</span>进行注册，并通过【鲸鱼合伙人】活动页面投资鲸鱼宝定期产品，方可产生分红。</p>
+                    <p>3、参与活动所获得的分红将以【现金红包】的形式存入用户的鲸鱼宝账户；分红每日结算，次日到账，用户可在鲸鱼宝APP【现金红包】列表中查看。</p>
+                    <p>4、活动期间，如果发现违法违规行为，平台将取消该用户的所有奖励及参与资格。本活动由鲸鱼金融保留最终解释权。</p>
+                </div>
+            </li>
+        </ul>
+        <script>
+            $(function(){
+                $(".zqgl-list li h1").click(function(){
+                    $(this).toggleClass('s-easy');
+                    $(this).parent("li").siblings("li").find("h1").removeClass('s-easy');
+                    $(this).parent("li").find(".detail").toggleClass('s-block');
+                    $(this).parent("li").siblings("li").find(".detail").removeClass('s-block');
+                    $(this).parent("li").siblings("li").find("h1").removeClass('no-jiao');
+                })
+
+                $(".zqgl-list li:last-child h1").click(function(){
+                    $(this).toggleClass('no-jiao');
+                })
+            })
+        </script>
+        <a class="phone" href="tel:400-840-2015"><img src="__PUBLIC__/static/partner/images/phone.png" alt=""></a>
+
+    </div>
+</li>

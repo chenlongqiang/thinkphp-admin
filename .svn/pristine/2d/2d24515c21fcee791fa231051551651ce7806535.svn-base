@@ -1,0 +1,107 @@
+<?php
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+use JinrPartner\Logic\UserLogic;
+
+/**
+  *分享地址页面
+  *
+  * @access public
+  */
+class ShareController extends Controller
+{
+    /**
+     *共享页面
+     *
+     * @return void
+     */
+    public function index()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $invite = I('invite'); //邀请人uid
+
+            $totalRes = $huserLogic->getTotal();
+
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getPartnerUrl", U("JinrPartner/Share/getPartner"));
+            $this->assign("getJinrUrl", U("JinrPartner/Share/getJinr"));
+            $this->display("Share/index");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+
+    /**
+     *了解鲸鱼合伙人
+     *
+     * @return void
+     */
+    public function getPartner()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $totalRes = $huserLogic->getTotal();
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getJinrUrl", U("JinrPartner/Share/getJinr"));
+            $this->display("Share/getPartner");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+
+    /**
+     *了解鲸鱼
+     *
+     * @return void
+     */
+    public function getJinr()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $totalRes = $huserLogic->getTotal();
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getPartnerUrl", U("JinrPartner/Share/getPartner"));
+            $this->display("Share/getJinr");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+
+    /**
+     *邀请注册鲸鱼合伙人
+     *
+     * @return void
+     */
+    public function joinJinr()
+    {
+        try {
+
+            $mobile = I('post.mobile');
+            $invite = I('post.inviteUid');
+            $huserLogic = D('User', 'Logic');
+
+            //根据手机号码获取用户信息
+            $userStatus = $huserLogic->getUserStatus('', $mobile);
+            $userStatus['userstatus'] = 3;
+
+            $this->ajaxReturn($userStatus);;
+            //存在则工获取用户的相关合伙人信息,与首页的区别在于不需要进行入库判断
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+
+    
+}

@@ -1,0 +1,342 @@
+<?php 
+namespace JinrPartner\Logic;
+use Think\Model;
+use Think\Exception as ThinkExcepion;
+
+
+/**
+ *用户logic类
+ * 
+ * @author "954 "
+ *
+ */
+class UserLogic extends Model
+{
+    Protected $autoCheckFields = false;
+
+    //积分-级别映射
+    private $_levels = array(
+        '50000' => 3,
+        '20000' => 2,
+        '5000'  => 1
+    );
+
+    //老用户投资-奖励积分映射
+    private $_award = array(
+        '20000' => 50000,
+        '5000' => 20000,
+        '0' => 5000
+    );
+
+    const DATADEVISION = '2016-09-01 00:00:00';  //老用户注册时间分隔点
+    const NEW_USER_INVEST_START = 5000.00;  //新用户起始投资金额
+
+    const USER_STATUS_UNREG = 1;  //末注册用户
+    const USER_STATUS_NORMAL = 2;  //注册但积分不足用户(新用户)
+    const USER_STATUS_PARTNER = 3; //合伙人
+
+    /**
+     *获取用户身份
+     *
+     * @param string $uid 用户身份id
+     * 
+     * @return array
+     *          userstatus  用户状态 1. 末注册 
+     *          2. 注册但积分不足(新用户)， 3. 合伙人
+     *          level       用户级别
+     *          grade       用户积分
+     */
+    public function getUserLevel($uid)
+    {
+        try {
+            //查找用户是否存在   
+            //ToDo: 使用接口请求主站
+            $userinfo = $this->judgeUser($uid);
+            if (!$userinfo) { 
+                return array(
+                    'userstatus' =>self::USER_STATUS_UNREG
+                );
+            }
+
+            //从鲸鱼合伙人相关表判断用户是否是鲸鱼合伙人
+            $partData = $this->getUserPartner($uid);
+            if (!$partData) {
+                $invest = $this->_getRegularInvestByUid($uid, $userinfo['c_time']);
+                //使用金额计算积分
+                $award = $this->getUserAward($invest, $userinfo['c_time']);
+                if ($award < self::NEW_USER_INVEST_START) {
+                    //对于新用户，小于积分的不能添加合伙人
+                    $result = array(
+                        'userstatus' => self::USER_STATUS_NORMAL,
+                        'grade' => $award,
+                        'rest' => bcsub(self::NEW_USER_INVEST_START, $award, 0)
+                    );
+                } else {
+                    //用户积分表进行写入
+                    $resTmp = $this->markAsPartner($uid, $userinfo['tel'], $award);
+                    $result = array(
+                        'userstatus' => self::USER_STATUS_PARTNER,
+                        'level' => $resTmp['level'],
+                        'grade' => $resTmp['grade'] 
+                    ); 
+                }
+            } else {
+                //用户已经是鲸鱼合伙人，使用相关信息直接返回
+                $result = array(
+                    'userstatus' => self::USER_STATUS_PARTNER,
+                    'level' => $partData['level'],
+                    'grade' => $partData['experience']
+                );
+            }
+            return $result;
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    /**
+     *判断用户是否存在且激活末锁定
+     *
+     * @param string $uid 用户id
+     *
+     * @return false|array
+     */
+    public function judgeUser($uid)
+    {
+        try {
+            $userinfo = array(
+                'id' => 1,
+                'tel' => '18221175810',
+                'c_time' => date('Y-m-d H:i:s')
+            );
+            return $userinfo;
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    /**
+     *获取用户合伙人数据
+     *
+     * @param string $uid 用户uid
+     * 
+     * @return array
+     */
+    public function getUserPartner($uid)
+    {
+        try {
+            $hpartner = D('Partner');
+            $where = array(
+                'uid' => $uid
+            );
+            $result = $hpartner->getOne($where);
+            return $result;
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    /**
+     * 标记用户为鲸鱼合伙人
+     *
+     * @param string $uid   用户id
+     * @param string $tel   用户手机号
+     * @param float  $award 用户积分
+     *
+     * @return array
+     */
+    public function markAsPartner($uid, $tel, $award=0.00)
+    {
+        try {
+            //根据积分换取级别
+            $level = $this->getLevelByExp($award);
+            $timeNow = date('Y-m-d H:i:s');
+            $set = array(
+                'uid' => $uid, 
+                'tel' => $tel,
+                'experience' => $award,
+                'level' => $level, 
+                'total_bonus' => 0.00,
+                'is_first' => strval(1),
+                'c_time' => $timeNow,
+                'u_time' => $timeNow
+            ); 
+            $hpartner = D('Partner');
+            //$res = $hpartner->addOne($set);
+            $res = true;
+            if (!$res) {
+                E("数据库更新失败");
+            }
+            return  array(
+                'level' => $level,
+                'grade' => $award
+            );
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+
+    /**
+     *通过积分获取用户级别
+     * 积分大于最小值(5000)必须在外部传入时得到保障
+     *
+     * @param int $exp 用户积分
+     *
+     * @return int
+     */
+    public function getLevelByExp($exp)
+    {
+        try {
+            $level = $this->_getDivideValue($this->_levels, $exp);
+            return $level;;
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+
+    }
+    
+    /**
+     *获取用户积分
+     * 
+     * @param float  $invest  用户投资金额
+     * @param string $regTime 用户注册时间
+     *
+     * @return int
+     */
+    public function getUserAward($invest, $regTime)
+    {
+        try {
+            $award = 0;
+            $a = new \DateTime($regTime);;
+            $b = new \DateTime(self::DATADEVISION);
+            if (($b->getTimestamp()) > ($a->getTimestamp())) {
+                //老用户直接使用奖励金额
+                $award = $this->_getDivideValue($this->_award, $invest);
+            } else {
+                //新用户需要获取用户实际的金额
+                $award = bcadd($invest, 0, 0);
+            }
+            return $award;
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    /**
+     * 根据一个值在下标区间获取其值
+     *
+     * @param array $array 原始数组
+     * @param int   $int   请求数据
+     *
+     * @return mixed
+     */
+    private static function _getDivideValue($array, $int)
+    {
+        $keys = array_keys($array);
+        $key = null;
+        $result = null;
+        ksort($keys);
+        $max = null;
+        foreach ($keys as $value) {
+            if (($max === null || $max > $int) && $value <= $int) {
+                $key = $value;
+                break;
+            }
+        }
+        if ($key !== null) {
+            $result =  $array[$key];
+        }
+        return $result;
+    }
+
+    /**
+     *根据用户uid和注册时间获取用户有效的投资金额 
+     * 老用户直接获取定期累计金额， 新用户获取当前活动
+     * 投资金额
+     *
+     * @param string $uid     用户uid
+     * @param string $regTime 用户注册时间
+     * @param bool   $force   强制获取所有金额,校正regTime
+     *
+     * @return float
+     */
+    private function _getRegularInvestByUid($uid, $regTime, $force=false)
+    {
+        //ToDo: 需要调用接口
+        $a = new \DateTime($regTime);
+        $b = new \DateTime(self::DATADEVISION);
+        if (($a->getTimestamp()) >= ($b->getTimestamp()) && false == $force) {
+            //获取所有的投资金额
+            $invest = 2000;
+        } else {
+            //获取当前活动的投资金额
+            $invest = 2000;
+        }
+        return $invest;
+    }
+
+    
+    /**
+     * 统计累计合伙人数量
+     *
+     * @return int
+     */
+    public function getTotalPartners()
+    {
+        try {
+            $hpartner = D('Partner');
+            $total = $hpartner->getCount();
+            return intval($total);
+        } catch (\Think\Exception $e) {
+            E($e->getMessage()); 
+        }
+    }
+
+    /**
+     *获取平台累计分红
+     *
+     * @return void
+     */
+    public function getPlatformInvest()
+    {
+        try {
+            $hcashDetail = D('CashDetail');
+            $where = array(
+                'event_key' => 'xxx',
+                'status' => array('in', array('1', '2', '3'))
+            );
+            $totalCash = $hcashDetail->getSum('money', $where);
+            return $totalCash;
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+    /**
+     *判断用户是否首次进入个人中心
+     *
+     * @param string $uid 用户id
+     *
+     * @return bool|exception
+     */
+    public function isFist($uid)
+    {
+        try {
+            $set = array(
+                'is_first' => '2'
+            );
+            $where = array(
+                'uid' => $uid,
+                'is_first' => '1'
+            );
+            $hpartner = D('Partner');
+            $res = $hpartner->update($set, $where);
+            return boolval($res);
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+}
+?>

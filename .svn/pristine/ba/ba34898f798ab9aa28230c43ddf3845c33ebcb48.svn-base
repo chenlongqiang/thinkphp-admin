@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/20
+ * Time: 上午01:15
+ */
+namespace Admin\Controller;
+
+class JinPartnerController extends BaseController {
+    
+    public function test()
+    {
+        $this->display();
+    }
+    
+}

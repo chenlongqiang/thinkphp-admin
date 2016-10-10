@@ -1,0 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 上午11:42
+ */
+namespace Admin\Controller;
+
+use Think\Controller;
+
+class BaseController extends Controller {
+    
+    public function __construct()
+    {
+        parent::__construct();
+        
+        //登陆判断
+        if(!PassportController::checkLogin()){
+            $this->redirect('Passport/login');
+        }
+    }
+
+}

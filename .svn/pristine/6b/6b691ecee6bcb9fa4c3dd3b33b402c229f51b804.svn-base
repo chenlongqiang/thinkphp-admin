@@ -1,0 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/21
+ * Time: 上午10:12
+ */
+
+//-----------Logic和service、api 的return码----------
+define('JR_SUCCESS', 1000); //成功
+define('JR_ERROR', 1001);   //失败
+define('JR_LOCATION', 1002); //跳转

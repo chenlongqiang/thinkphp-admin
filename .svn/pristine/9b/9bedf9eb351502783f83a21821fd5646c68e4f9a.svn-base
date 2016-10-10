@@ -1,0 +1,120 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "e4d343c47714150e4e1cc3538bfc17c1",
+    "content-hash": "5e5ad45ee3f5a9094f8928a118fe564f",
+    "packages": [
+        {
+            "name": "jamescauwelier/psredis",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamescauwelier/PSRedis.git",
+                "reference": "c64a42698cf56612d060142e5dc130c97ec73940"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/jamescauwelier/PSRedis/c64a42698cf56612d060142e5dc130c97ec73940.zip",
+                "reference": "c64a42698cf56612d060142e5dc130c97ec73940",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "predis/predis": "~1.0"
+            },
+            "require-dev": {
+                "phake/phake": "@stable",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sentinel": "lib/",
+                    "PSRedis": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Cauwelier",
+                    "email": "james.cauwelier@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sentinel client for the popular php redis client",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis",
+                "sentinel"
+            ],
+            "time": "2016-06-14 07:28:23"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "6ab10b2b705ea5121f2c1ea87a290f6871c32ebd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/nrk/predis/6ab10b2b705ea5121f2c1ea87a290f6871c32ebd.zip",
+                "reference": "6ab10b2b705ea5121f2c1ea87a290f6871c32ebd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-18 19:51:10"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/22
+ * Time: 下午11:42
+ */
+
+namespace EventApi\Controller;
+
+use Common\Base\ApiBaseController;
+use Think\Controller;
+
+class IndexController extends ApiBaseController 
+{
+    
+    //注册事件
+    public function register()
+    {
+        $param = I('post.');
+        $this->apiSuccess($param);
+//        $this->ajaxReturn($param);
+        
+        //做分发:
+        //分发到活动系统具体业务 logic.无return,只有在具体业务上继续curl调用其它接口?
+//        D('JinrPartner/User', 'Logic')->getUserLevel();
+        
+        //1.请求主站接口
+        //2.请求java接口
+    }
+
+    //投资定期
+    public function investRegular()
+    {
+    }
+    
+}

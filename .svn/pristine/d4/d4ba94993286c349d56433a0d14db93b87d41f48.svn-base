@@ -1,0 +1,175 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 下午06:22
+ */
+namespace Admin\Controller;
+
+use Admin\Model\MenuModel;
+
+class SystemController extends BaseController {
+    
+    public function menuList()
+    {
+        //配置
+        $config = array(
+            'page_size' => 10,
+            'status' => array(
+                '1' => '已启用',
+                '2' => '已禁用',
+            ),
+            'btn_class' => array(
+                '1' => 'btn-warning',
+                '2' => 'btn-success',
+            ),
+            'btn_word' => array(
+                '1' => '禁用',
+                '2' => '启用',
+            ),
+        );
+
+        //过滤条件
+        $filter = I('post.filter');
+        
+        //判断是否重置过滤条件
+        $reset = I('post.reset');
+        if (!empty($reset)) {
+            $filter = array();
+        }
+        $where = $this->buildWhereToMenuList($filter);
+        
+        //获取列表
+        $result = D('Menu')->getList($where, I('get.p'), $config['page_size']);
+
+        $this->assign('page', get_page($result['count'], $config['page_size']));
+        $this->assign('list', $result['list']);
+        $this->assign('filter', $filter);
+        $this->assign('config', $config);
+        $this->assign('title', '菜单管理');
+        $this->display('menu_list');
+    }
+    
+    private function buildWhereToMenuList($filter)
+    {
+        $where = array();
+        if (!empty($filter['status'])) {
+            $where['status'] = array('eq', $filter['status']);
+        }
+        if (!empty($filter['keyword'])) {
+            $where[$filter['option']] = array('eq', $filter['keyword']);
+        }
+        if (!empty($filter['pid'])) {
+            $where['pid'] = array('eq', $filter['pid']);
+        }
+        
+        //默认条件
+        if (empty($where)) {
+            $where = array(
+                'level' => MenuModel::LEVEL_FIRST,
+            );
+        }
+        return $where;
+    }
+ 
+    public function menuStatus()
+    {
+        $data = I('');
+        $set_status = $data['now_status'] == MenuModel::STATUS_ON ? MenuModel::STATUS_OFF : MenuModel::STATUS_ON;
+        $result = D('Menu')->update(array('status' => $set_status), array('id' => $data['id']));
+        if ($result) {
+            $this->success('操作成功!', U('System/menuList'));
+        } else {
+            $this->error('操作失败');
+        }
+    }
+
+    public function menuDelete()
+    {
+        $data = I('');
+        $result = D('Menu')->del(array('id' => $data['id']));
+        if ($result) {
+            $this->success('操作成功!', U('System/menuList'));
+        } else {
+            $this->error('操作失败');
+        }
+    }
+    
+    public function menuEdit()
+    {
+        $data = I('');
+        $id = array_pull($data, 'val.id');
+        if (!empty($id)) {
+            //更新
+            D('Menu')->update($data['val'], array('id' => $id));
+        } else {
+            //添加
+            D('Menu')->addOne($data['val']);
+        }
+        $this->success('操作成功!', U('System/menuList'));
+    }
+    
+    public function roleList()
+    {
+        //配置
+        $config = array(
+            'page_size' => 10,
+        );
+
+        //过滤条件
+        $filter = I('post.filter');
+
+        //判断是否重置过滤条件
+        $reset = I('post.reset');
+        if (!empty($reset)) {
+            $filter = array();
+        }
+        $where = $this->buildWhereToRoleList($filter);
+
+        //获取列表
+        $result = D('Role')->getList($where, I('get.p'), $config['page_size']);
+
+        $this->assign('page', get_page($result['count'], $config['page_size']));
+        $this->assign('list', $result['list']);
+        $this->assign('filter', $filter);
+        $this->assign('config', $config);
+        $this->assign('title', '角色管理');
+        $this->display('role_list');
+    }
+
+    private function buildWhereToRoleList($filter)
+    {
+        $where = array();
+        if (!empty($filter['keyword'])) {
+            $where[$filter['option']] = array('eq', $filter['keyword']);
+        }
+        return $where;
+    }
+
+    public function roleDelete()
+    {
+        $data = I('');
+        $result = D('Role')->del(array('id' => $data['id']));
+        if ($result) {
+            $this->success('操作成功!', U('System/roleList'));
+        } else {
+            $this->error('操作失败');
+        }
+    }
+
+    public function roleEdit()
+    {
+        $data = I('');
+        $id = array_pull($data, 'val.id');
+        if (!empty($id)) {
+            //更新
+            D('Role')->update($data['val'], array('id' => $id));
+        } else {
+            //添加
+            D('Role')->addOne($data['val']);
+        }
+        $this->success('操作成功!', U('System/roleList'));
+    }
+    
+}

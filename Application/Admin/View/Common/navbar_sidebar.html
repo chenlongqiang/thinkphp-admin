@@ -1,0 +1,60 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-head">
+                <p>
+                    <img src="__PUBLIC__/static/admin/img/logo.png" style="width:150px;">
+                </p>
+            </li>
+
+            <li>
+                <a href="{:U('Index/index')}"><i class="fa fa-dashboard fa-fw"></i> 首页</a>
+            </li>
+
+            <if condition="R('Passport/getAdminIdInSession') eq 1">
+                <li>
+                    <a href="#"><i class="fa fa-wrench fa-fw"></i> 系统设置<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{:U('System/menuList')}">菜单管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('System/roleList')}">角色管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('System/adminList')}">后台用户管理</a>
+                        </li>
+                    </ul>
+                </li>
+            </if>
+
+            <volist name="__menu" id="value_first">
+                <li>
+                    <a href="{:U($value_first[path])}"><i class="fa {$value_first.icon} fa-fw"></i> {$value_first.name}<notempty name="value_first[sub]"><span class="fa arrow"></span></notempty></a>
+                    <notempty name="value_first[sub]">
+                        <ul class="nav nav-second-level">
+                            <volist name="value_first[sub]" id="value_second">
+                                <li>
+                                    <a href="{:U($value_second[path])}">{$value_second.name}<notempty name="value_second[sub]"><span class="fa arrow"></span></notempty></a>
+                                    <notempty name="value_second[sub]">
+                                        <ul class="nav nav-third-level">
+                                            <volist name="value_second[sub]" id="value_third">
+                                                <li>
+                                                    <a href="{:U($value_third[path])}">{$value_third.name}</a>
+                                                </li>
+                                            </volist>
+                                        </ul>
+                                    </notempty>
+                                </li>
+                            </volist>
+                        </ul>
+                    </notempty>
+                </li>
+            </volist>
+
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->
+<!--todo 根据url写js-->

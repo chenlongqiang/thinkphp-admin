@@ -1,0 +1,19 @@
+<li class="mli">
+    <h1 class="mk mk2"><img src="__PUBLIC__/static/JinrPartner/imgs/ms2.jpg" alt=""/><span>昨日获得分红：<a>{$yesterdayBonus}元</a></span></h1>
+    <div class="detail  dtt" style="display:none;">
+        <ol class="fenhong">
+            <img src="__PUBLIC__/static/JinrPartner/imgs/fenhong.jpg" alt=""/>
+            <ul class="fh-data">
+                <volist name="yesterdayInviteAndInvest" id="v">
+                    <li>
+                        <div class="kuai">
+                            <p>新增<a>{$v['numbers']}</a>个{$v['level']}级投资人</p>
+                            <p>累计投资<a>{$v['amount']}</a>元</p>
+                        </div>
+                        <span class="lv">X{$v['rate']}%</span>
+                    </li>
+                </volist>
+            </ul>
+        </ol>
+    </div>
+</li>

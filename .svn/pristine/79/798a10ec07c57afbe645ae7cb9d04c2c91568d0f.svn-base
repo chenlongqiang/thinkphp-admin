@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <title>{$seo['title']}</title>
+    <meta name="keywords" content="{$seo['keywords']}" />
+    <meta name="description" content="{$seo['description']}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link href="__PUBLIC__/static/JinrPartner/css/year.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/static/common/js/jquery.1.7.js"></script>
+    </head>
+
+    <body style="background:#F2F2F2">
+
+            <!-- 新用户首次登录 -->
+            <nav class="hidden  new-use" style="display:block;">
+                <div class="tankuang  tk1">
+                    <a class="btn-closes btn-close1"></a>
+                    <ol>
+                        <div class="timu">
+                            <p>鲸鱼宝宝给您送了</p>
+                            <p><a>{$userInfo['exp']}</a>经验值</p>
+                        </div>
+                        <div class="grade">
+                            <p>恭喜您成为</p>
+                            <h1>鲸鱼合伙人LV{$userInfo['level']}</h1>
+                        </div>
+                    <p class="look">快邀请更多合伙人开始赚钱</p>
+                    </ol>
+                </div>
+            </nav>
+
+
+            <!-- 老用户首次登录 -->
+           <nav class="hidden  old-use" style="display:block;">
+                <div class="tankuang  tk2">
+                    <a class="btn-closes btn-close2"></a>
+                    <ol>
+                        <div class="grade">
+                            <p>恭喜您成为</p>
+                            <h1>鲸鱼合伙人LV{$userInfo['level']}</h1>
+                        </div>
+                        <p class="look">快邀请更多合伙人开始赚钱</p>
+                    </ol>
+                </div>
+            </nav>
+
+
+
+            <nav class="hidden  bcewm">
+            <div class="baocun">
+            <a class="btn-close  btn-close3"></a>
+            <div class="erweima">
+                <img src="{$qrcode}" alt=""/>
+            </div>
+            </div>
+            </nav>
+            <script>
+            $(function(){
+                $(".btn-close1").click(function(){
+                    $(".new-use").fadeOut();
+                })
+                $(".btn-close2").click(function(){
+                    $(".old-use").fadeOut();
+                })
+
+                $(".member").click(function(){
+                    $(".bcewm").fadeIn();
+                })
+                $(".btn-close3").click(function(){
+                    $(".bcewm").fadeOut();
+                })
+            })
+    </script>
+
+
+    <div id="m-body">
+        <div class="whole  whole6">
+            <div class="member"><img src="__PUBLIC__/static/JinrPartner/imgs/member.jpg" alt=""/></div>
+            <ul class="gonglue-list  member-list">
+                <li class="mli">
+                    <h1 class="mk mk1"><img src="__PUBLIC__/static/JinrPartner/imgs/ms1.jpg" alt=""/><span><label>鲸鱼合伙人<a class="hhr">LV{$userInfo['level']}</a></label><label><a>投资送经验值</a></label></span></h1>
+                    <div class="detail  dtt" style="display:none;">
+                        <h2>我的投资经验值</h2>
+                        <ol class="jy-value">{$userInfo['exp']}</ol>
+                        <div class="dengji">
+                            <p style="margin:0"></p>
+                        </div>
+                        <img class="dj" src="__PUBLIC__/static/JinrPartner/imgs/dengji.jpg" alt=""/>
+                        <script>
+                            $(document).ready(function(e){
+                                var myWidth=$(".member-list li").width()*0.9;
+
+                                $(".mk1").click(function(){
+                                    var percent = parseFloat($(".jy-value").text()),_html='';
+                                    var barwidth,_html='';
+
+                                    //var barwidth = percent*(myWidth/50000);
+                                    if(percent==0){
+                                         barwidth=0;
+                                         _html = '您距离LV1只差<span>5000</span>经验值了！';
+                                    }else if(percent<5000){
+                                         barwidth=myWidth*0.05;
+                                        _html = '您距离LV1只差<span>'+(5000-percent)+'</span>经验值了！';
+                                    }else if(percent>=5000&&percent<20000){
+                                         barwidth=myWidth*0.3;
+                                        _html = '您距离LV2只差<span>'+(20000-percent)+'</span>经验值了！';
+                                    }else if(percent>=20000&&percent<50000){
+                                         barwidth=myWidth*0.7;
+                                        _html = '您距离LV3只差<span>'+(50000-percent)+'</span>经验值了！';
+                                    }else{
+                                         barwidth=myWidth;
+                                    }
+
+                                    $(".dengji p").animate({width:barwidth},1500);
+                                    $('#show_status').html(_html);
+
+                                })
+                            })
+                        </script>
+                        <h3 id="show_status"></h3>
+                        <a class="btn-touzi">点击投资即送经验值</a>
+                    </div>
+                </li>
+                <!-- 昨日分红-->
+                <include file="center/index_last_bonus"/>
+                <!-- 昨日分红end-->
+
+                <!-- 累计分红-->
+                <include file="center/index_all_bonus"/>
+                <!-- 累计分红end-->
+
+                <!-- 赚钱攻略-->
+                <include file="center/index_strategy"/>
+                <!-- 赚钱攻略end-->
+            </ul>
+            <script>
+                $(function(){
+                    $(".member-list .mli .mk").click(function(){
+                        $(this).toggleClass('s-easy2');
+                        $(this).parent(".mli").siblings(".mli").find(".mk").removeClass('s-easy2');
+                        $(this).parent(".mli").find(".dtt").toggleClass('s-block');
+                        $(this).parent(".mli").siblings(".mli").find(".detail").removeClass('s-block');
+                    })
+
+                    $(".mk2").click(function(){
+                        $(".mk3").toggleClass('s-xian');
+                    })
+
+                    $(".mk1,.mk3,.mk4").click(function(){
+                        $(".mk3").removeClass('s-xian');
+                    })
+
+                })
+            </script>
+            <p style="height: 80px;"></p>
+
+
+            <div class="footer  footer2">
+                <a class="btn-join">点击邀请更多合伙人</a>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+
+</html>

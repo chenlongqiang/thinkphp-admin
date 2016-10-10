@@ -1,0 +1,103 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午10:10
+ */
+
+namespace Admin\Model;
+
+use Think\Model;
+
+class MenuModel extends Model 
+{
+
+    /**
+     * 插入单条数据
+     * @param array $temp_data
+     * @return mixed 返回成功ID
+     */
+    public function addOne(array $temp_data)
+    {
+        $data = $this->create($temp_data);
+        return $this->add($data);
+    }
+
+    /**
+     * 删除数据
+     * @param array $where
+     * @return mixed 返回删除的记录数
+     */
+    public function del(array $where)
+    {
+        $this->where($where);
+        return $this->delete();
+    }
+
+    /**
+     * 单个保存
+     * @param array $temp_data
+     * @param $where
+     * @return bool
+     */
+    public function saveOne(array $temp_data, $where)
+    {
+        $this->where($where);
+        $res = $this->save($temp_data);
+        if (!empty($res)) {
+
+        }
+        return $res;
+    }
+    
+    /**
+     * 查询单条
+     * @param array $where
+     * @param string $order
+     * @param string $field
+     * @return mixed 返回单条数据
+     */
+    public function getOne(array $where, $order = '', $field = '*')
+    {
+        if (!empty($where)) {
+            $this->where($where);
+        }
+        if (!empty($order)) {
+            $this->order($order);
+        }
+        if (!empty($field)) {
+            $this->field($field);
+        }
+        $res = $this->find();
+        return $res;
+    }
+
+    /**
+     * 查询多条数据
+     * @param array $where
+     * @param $page
+     * @param int $page_size
+     * @param string $order
+     * @param string $field
+     * @param bool $is_count
+     * @return mixed
+     */
+    public function getList(array $where, $page, $page_size = 10, $order = '', $field = '', $is_count = true)
+    {
+        if (!empty($where)) {
+            $this->where($where);
+        }
+        if (!empty($order)) {
+            $this->order($order);
+        }
+        $list = $page_size > 0 ? $this->page($page)->limit($page_size)->field($field)->select() : $this->field($field)->select();
+        $res['list'] = $list;
+        if ($is_count) { //统计条数
+            $count = empty($where) ? $this->count() : $this->where($where)->count();
+            $res['count'] = $count;
+        }
+        return $res;
+    }
+    
+}

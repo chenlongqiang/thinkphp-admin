@@ -1,0 +1,157 @@
+<extend name="Common:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading form-inline clearfix">
+                    <div class="form-group pull-left">
+                        <label class="sr-only"></label>
+                        <a href="#add_menu_layer" data-toggle="modal" class="btn btn-outline btn-success">
+                            <i class="fa fa-plus fa-fw"></i> 添加菜单
+                        </a>
+                    </div>
+                    <div class="form-group pull-right">
+                        <label class="sr-only"></label>
+                        <a href="" class="btn btn-outline btn-link">
+                            返回上一级
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-heading clearfix">
+                    <form class="form-inline pull-left" role="form" action="__SELF__" id="form_search" method="post">
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <select name="client" class="form-control" onchange="$('#form_search').submit();">
+                                <option value="">状态</option>
+                                <option value="1">启用</option>
+                                <option value="2">禁用</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <select class="form-control" name="type">
+                                <option value="1">菜单名</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="keyword">
+                            <input type="text" class="form-control" name='keyword'>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-search fa-fw"></i> 搜 索
+                        </button>
+                    </form>
+
+                    <!--<div class="pull-right" style="margin-left: 5px;">-->
+                        <!--<a href="{:U('')}" class="btn btn-danger">-->
+                            <!--<span class="glyphicon glyphicon-export"></span> -->
+                        <!--</a>-->
+                    <!--</div>-->
+                </div>
+
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>状态</th>
+                                    <th>菜单名</th>
+                                    <th>等级</th>
+                                    <th>上级菜单ID</th>
+                                    <th>菜单路径</th>
+                                    <th>排序</th>
+                                    <th>菜单图标</th>
+                                    <th style="text-align: center">操作</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <volist name="list" id="value">
+                                    <tr>
+                                        <td>{$value.id}</td>
+                                        <td>{$value.status}</td>
+                                        <td>{$value.name}</td>
+                                        <td>{$value.level}</td>
+                                        <td>{$value.pid}</td>
+                                        <td>{$value.path}</td>
+                                        <td>{$value.sort}</td>
+                                        <td>{$value.icon}</td>
+                                        <td style="text-align: center">
+                                            <button class="btn btn-xs btn-primary">查看子菜单</button>
+                                            <button class="btn btn-xs btn-primary">禁用</button>
+                                            <button class="btn btn-xs btn-danger">删除</button>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                    <!-- 分页 -->
+                    <ul class="pagination">{$page}</ul>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+
+    <!-- 添加弹层 -->
+    <div class="modal fade" id="add_menu_layer" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">添加菜单</h4>
+                </div>
+                <form action="{:U('', array('test'=>$_GET['scope']))}" id="" class="form-horizontal" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-sm-3  control-label">菜单名:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val['name']" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 col-sm-offset-1 control-label">状态</label>
+                            <div class="col-sm-6">
+                                <div class="btn-group" style="">
+                                    <select name="val['type']" class="table-filter form-control input-sm">
+                                        <option value="">状态</option>
+                                        <volist name="sources" id="vo">
+                                            <option value="{$key|hs}">{$vo|hs}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3  control-label">添加推荐人邮箱:</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="val[user_email]" value="" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 col-sm-offset-1 control-label">现有推荐人:</label>
+                            <div class="col-sm-6" id="recommend_email_list" style="padding-top:7px;">
+                                暂无推荐人
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="add_new_recommend_submit btn btn-primary">确定</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>

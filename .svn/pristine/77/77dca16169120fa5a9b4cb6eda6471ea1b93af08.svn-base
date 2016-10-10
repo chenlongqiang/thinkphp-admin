@@ -1,0 +1,18 @@
+<?php
+
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+
+class IndexController extends Controller {
+
+    public function index()
+    {
+//        $a = C('PARTNER.TEST');
+//        dump($a);
+        dump(check_pwd('sdads2121'));
+        $this->display();
+    }
+
+
+}

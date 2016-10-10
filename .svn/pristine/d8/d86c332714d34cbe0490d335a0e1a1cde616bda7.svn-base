@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午2:10
+ */
+
+$common_config = 'db,redis';
+$module_config = 'jinr_partner'; //'huodong1,huodong2,...'
+$load_ext_config = $common_config.','.$module_config;
+
+return array(
+    //'配置项'=>'配置值'
+    'LOAD_EXT_CONFIG' => $load_ext_config, //配置扩展
+    'DEFAULT_MODULE'  => 'Admin',          // 默认模块
+);
+

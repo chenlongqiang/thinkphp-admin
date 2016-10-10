@@ -1,0 +1,75 @@
+<extend name="Common:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading clearfix">
+                    <form class="form-inline pull-left" role="form" action="__SELF__" id="form_filter" method="post">
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <select class="form-control" name="filter[option]">
+                                <option value="phone" {$filter[option]|option_selected=###,"phone"}>手机</option>
+                                <option value="status" {$filter[option]|option_selected=###,"status"}>状态</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="keyword">
+                            <input type="text" class="form-control" name='filter[keyword]' value="{$filter[keyword]|hs}" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-search fa-fw"></i> 搜 索
+                        </button>
+                        <input type="hidden" id="reset" name="reset" value="0">
+                        <button type="submit" class="btn btn-primary" onclick="$('#reset').val('1')">
+                            <i class="fa fa-refresh fa-fw"></i> 重 置
+                        </button>
+                    </form>
+                </div>
+
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>手机</th>
+                                    <th>红包金额</th>
+                                    <th>状态</th>
+                                    <th>添加时间</th>
+                                    <th>更新时间</th>
+                                    <th>获得时间</th>
+                                    <th style="text-align: center">操作</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <volist name="list" id="value">
+                                    <tr>
+                                        <td>{$value.id}</td>
+                                        <td>{$value.phone}</td>
+                                        <td>{$value.money}</td>
+                                        <td>{$config[status][$value['status']]}</td>
+                                        <td>{$value.c_time}</td>
+                                        <td>{$value.u_time}</td>
+                                        <td>{$value.get_time}</td>
+                                        <td style="text-align: center">
+                                            <a href="{:U('JinPartner/updateStatus', array('id' => $value[id]))}" class="btn btn-xs btn-primary">审核</a>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                    <!-- 分页 -->
+                    <div class="pagination">{$page}</div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+</block>

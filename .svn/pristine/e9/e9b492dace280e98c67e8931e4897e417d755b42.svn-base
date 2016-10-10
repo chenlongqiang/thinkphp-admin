@@ -1,0 +1,30 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午10:10
+ */
+
+namespace Admin\Model;
+
+use Common\Model\BaseModel;
+
+class MenuModel extends BaseModel
+{
+    const STATUS_ON = 1;
+    const STATUS_OFF = 2;
+    
+    const LEVEL_FIRST = 1;
+    const LEVEL_SECOND = 2;
+    const LEVEL_THIRD = 3;
+    
+    //顶级菜单pid
+    const DEFAULT_PID = 0;
+    
+    protected $_auto = array(
+        array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+        array('u_time', 'gmt_time', self::MODEL_BOTH, 'function'),
+    );
+    
+}

@@ -1,0 +1,104 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 上午11:42
+ */
+namespace Admin\Controller;
+
+use Admin\Model\AdminModel;
+use Think\Controller;
+
+class PassportController extends Controller {
+    
+    public function login()
+    {
+        $this->display();
+    }
+    
+    public function doLogin()
+    {
+        $data = I('');
+        
+        $admin = D('Admin')->getOne(array('name' => $data['name']));
+        
+        //登陆判断
+        if (empty($admin)) {
+            $msg = '用户不存在!';
+        } elseif($admin['status'] != AdminModel::STATUS_ENABLE) {
+            $msg = '该用户已禁用!';
+        } else {
+            $login_password = D('Admin')->encrypt($data['password']);
+            $msg = $login_password == $admin['password'] ? '' : '密码错误!';
+        }
+        
+        if ($msg != '') {
+            $this->error($msg);
+        }
+        
+        $this->setAdminAuthToSession($admin['id'], $admin['name'], $admin['is_manager']);
+        
+        $this->redirect('Index/index');
+    }
+
+    /**
+     * 登陆判断
+     * @return bool
+     */
+    public static function checkLogin()
+    {
+        if(get_session(AdminModel::SESSION_KEY_ADMIN_AUTH))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 登出
+     */
+    public function logout()
+    {
+        $this->delAdminAuthToSession();
+        $this->redirect('Index/index');
+    }
+
+    /**
+     * 记录登陆信息session
+     * @param $admin_id
+     * @param $name
+     * @param $is_manager
+     * @return bool
+     */
+    private function setAdminAuthToSession($admin_id, $name, $is_manager)
+    {
+        set_session(AdminModel::SESSION_KEY_ADMIN_AUTH, array(
+            'id' => $admin_id,
+            'name' => $name,
+            'is_manager' => $is_manager
+        ));
+        return true;
+    }
+
+    /**
+     * 清除登陆信息session
+     * @return bool
+     */
+    private function delAdminAuthToSession()
+    {
+        del_session(AdminModel::SESSION_KEY_ADMIN_AUTH);
+        return true;
+    }
+    
+    public function getAdminIdInSession()
+    {
+        return get_session(AdminModel::SESSION_KEY_ADMIN_AUTH.'.id');
+    }
+    
+    public function getAdminNameInSession()
+    {
+        return get_session(AdminModel::SESSION_KEY_ADMIN_AUTH.'.name');
+    }
+    
+}

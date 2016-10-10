@@ -1,0 +1,433 @@
+<extend name="Start/base" />
+<block name="content">
+<!-- 红包到账页面 --> 
+<nav class="hidden  partner"> 
+	<div class="tankuang  pa  zhuce"> 
+		<p class="ceng" style="height:100%;"></p>
+		<ol>
+			<p>您的<span>5000元</span>红包已存入</p>
+			<p>鲸鱼宝账户180xxxxxxxxx</p>
+			<p>收益可提现</p>
+		</ol>
+		<a class="app" href="http://um0.cn/5tVSx"></a>
+		<a class="anniu  anniu3"></a> 
+	</div>
+</nav>
+<div class="footer  pfoot  partner-footer" style="display:none">
+	<a class="btn-invite">点击加入鲸鱼合伙人</a>
+</div> 
+
+<script>
+	var phone_reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+    var verify_reg = /^\d{6}$/;
+    var pwd_reg = /[a-zA-Z0-9]{6,18}/;
+    function verifyGen(item, regE, tips)
+    {
+        if(item == "")
+        {
+            alert(tips+"不能为空");
+            return false;
+        } else if(!regE.test(item)) {
+            alert(tips+"格式不正确");
+        } else {
+            return item;
+        }
+    }
+
+$(function(){
+	$(".btn-get").click(function(){
+        var phone = $('#phone').val();
+        var verify = $('#yz-ma').val();
+        var pwd = $('#password-set').val();
+        //验证手机号码格式
+        phone  = verifyGen(phone, phone_reg, "手机号码" );
+        verify = verifyGen(verify, verify_reg, "手机验证码");
+        pwd = verifyGen(pwd, pwd_reg, "密码");
+        if(phone && verify && pwd)
+        {
+            $.ajax(
+                {
+                    "url": "/JinrPartner/Share/doRegistry",
+                    "data": {"phone": phone, "verify": verify, "pwd": pwd},
+                    "type": "post",
+                    "dataType": "json",
+                    "async": true,
+                    "success": function (data) {
+                        if(data.status ==  true)
+                        {
+		                    $(".partner,.partner-footer").fadeIn();
+                        } else {
+                            // ToDo:处理错误提示
+                        }
+                    }
+                }
+            );
+        }
+	});
+
+    
+	$(".ceng,.partner ol").click(function(){
+		$(".partner,.partner-footer").fadeOut();
+	})
+
+	$(".anniu3").click(function(){
+		$(".whole7").animate({"top":"0"},200);
+	})
+	
+	$(".hehuo").click(function(){
+		$(".whole7").animate({"top":"100%"},200);
+	})
+})
+</script>
+
+<div class="whole  whole7">
+	<ol class="rolling">
+		<img src="__PUBLIC__/static/JinrPartner/imgs/sound.png" />
+		<p class="rolling_p">
+			<marquee  direction="left" width="100%" height="30px" scrolldelay="0" scrollamount="4">
+				<ul class="rolling_list">
+                    <li>当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人</li>
+                    <li>累计发放分红<span class="yuan">{$totalBonus|default=0}</span>元</li>
+				</ul>
+			</marquee>
+		</p>
+	</ol>
+	
+	<img class="index2-img" src="__PUBLIC__/static/JinrPartner/imgs/index2.jpg" alt=""/>
+	<div class="index-content2">
+		<div class="gonglue  hehuo"><img src="__PUBLIC__/static/JinrPartner/imgs/hehuo.jpg" alt=""/></div>
+	</div>	
+	<ul class="gonglue-list">
+		<li>
+			<h1><span>如何成为鲸鱼合伙人？</span></h1>
+			<div class="detail" style="display:none;">
+				<p>1、所有投资经验值≥5000的鲸鱼宝新老用户均可成为鲸鱼合伙人。投资经验值越高，合伙人等级越高。</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th>投资经验值<span>X</span></td>
+								<th>合伙人等级</td>
+							</tr>
+							<tr>	
+								<td>5,000≤<span>X</span>＜20,000</td>
+								<td>LV1</td>
+							</tr>
+							<tr>	
+								<td>20,000≤<span>X</span>＜50,000</td>
+								<td>LV2</td>
+							</tr>
+							<tr>	
+								<td><span>X</span>≥50,000</td>
+								<td>LV3</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<p>2、用户通过【鲸鱼合伙人】活动页面投资定期产品，投资多少即可积累多少投资经验值。</p>
+				<p>3、老用户有礼（8月22日之前完成注册的）：为回馈鲸鱼宝老用户，活动期间，老用户只要进入活动页面点击加入鲸鱼合伙人，即可获得经验值奖励，直接成为鲸鱼合伙人。 具体奖励如下：</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th>老用户定期账户金额Y</td>
+								<th>奖励投资经验值</td>
+							</tr>
+							<tr>	
+								<td><span>Y</span>＜50,000</td>
+								<td>5,000</td>
+							</tr>
+							<tr>	
+								<td>5,000S<span>Y</span>＜20,000</td>
+								<td>20,000</td>
+							</tr>
+							<tr>	
+								<td><span>X</span>≥20,000</td>
+								<td>50,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</li>
+		<li>
+			<h1><span>鲸鱼合伙人的分红如何计算？</span></h1>
+			<div class="detail" style="display:none;">
+				<h2>只有通过【鲸鱼合伙人】活动页面投资的金额，才产生分红。</h2>
+				<p>1、鲸鱼合伙人的分红= 一级投资人投资额X分红比例+二级投资人投资额X分红比例+三级投资人投资额X分红比例。</p>
+				<p>2、分红比例由鲸鱼合伙人的等级和投资人与合伙人的关系层级共同决定。</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist  tblist2-1" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th class="biao"></td>
+								<th>LV1</td>
+								<th>LV2</td>
+								<th>LV3</td>
+							</tr>
+							<tr>	
+								<td class="kb">一级投资人</td>
+								<td>1%</td>
+								<td>1.1%</td>
+								<td>1.2%</td>
+							</tr>
+							<tr>	
+								<td class="kb">二级投资人</td>
+								<td>0.6%</td>
+								<td>0.7%</td>
+								<td>0.8%</td>
+							</tr>
+							<tr>	
+								<td class="kb">三级投资人</td>
+								<td>0.4%</td>
+								<td>0.5%</td>
+								<td>0.8%</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<p>举个例子：假如每个投资人都投资10000元，那么获得分红如下图</p>					
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist  tblist2-1  tblist2-2" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th></td>
+								<th><ol>LV1</ol><ol>获得分红</ol></td>
+								<th><ol>LV2</ol><ol>获得分红</ol></td>
+								<th><ol>LV3</ol><ol>获得分红</ol></td>
+							</tr>
+							<tr>	
+								<td class="kb"><ol>一级投资人</ol><ol>投1万</ol></td>
+								<td>100</td>
+								<td>110%</td>
+								<td>120</td>
+							</tr>
+							<tr>	
+								<td class="kb"><ol>二级投资人</ol><ol>投1万</ol></td>
+								<td>60</td>
+								<td>70</td>
+								<td>80</td>
+							</tr>
+							<tr>	
+								<td class="kb"><ol>三级投资人</ol><ol>投1万</ol></td>
+								<td>40</td>
+								<td>50</td>
+								<td>60</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</li>
+		<li>
+			<h1><span>友情提示！</span></h1>
+			<div class="detail" style="display:none;">
+				<p>1、活动期间，用户只有通过<span>【鲸鱼合伙人】活动页面</span>投资鲸鱼宝定期产品，方可获得相应数量的投资经验值。</p>
+				<p>2、用户所邀请的投资人必须通过用户的<span>专属二维码或邀请链接</span>进行注册，并通过【鲸鱼合伙人】活动页面投资鲸鱼宝定期产品，方可产生分红。</p>
+				<p>3、活动期间，如果发现违法违规行为，平台将取消该用户的所有奖励及参与资格。本活动由鲸鱼金融保留最终解释权。</p>
+			</div>
+		</li>
+	</ul>
+	<script>
+		$(function(){
+			$(".gonglue-list li h1").click(function(){
+				$(this).toggleClass('s-easy');
+				$(this).parent("li").siblings("li").find("h1").removeClass('s-easy');
+				$(this).parent("li").find(".detail").toggleClass('s-block');
+				$(this).parent("li").siblings("li").find(".detail").removeClass('s-block');
+				$(this).parent("li").siblings("li").find("h1").removeClass('no-jiao');
+			})
+			
+			$(".gonglue-list li:last-child h1").click(function(){
+				$(this).toggleClass('no-jiao');
+			})
+		})
+	</script>	
+	
+	<a class="phone" href="tel:400-840-2015"><img src="__PUBLIC__/static/JinrPartner/imgs/phone.png" alt=""/></a>
+	<p style="height: 65px;"></p>
+	
+</div>
+
+
+
+
+
+
+<div id="m-body">
+	<div class="whole  whole5">
+		<ol class="rolling  rolling2" style="background:rgba(241,127,115,0.8)">
+			<img src="__PUBLIC__/static/JinrPartner/imgs/sound.png" />
+			<p class="rolling_p">
+				<marquee  direction="left" width="100%" height="30px" scrolldelay="0" scrollamount="4">
+					<ul class="rolling_list">
+                        <li>当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人</li>
+                        <li>累计发放分红<span
+                                class="yuan">{$totalBonus|default=0}</span>元</li>
+					</ul>
+				</marquee>
+			</p>
+		</ol>
+		<img class="index2-img" src="__PUBLIC__/static/JinrPartner/imgs/register.jpg" alt=""/>
+		
+		<ol class="user-input">
+			<div class="telephone">
+				<img src="__PUBLIC__/static/JinrPartner/imgs/phone.jpg" alt=""/>
+				<input id="phone" maxlength="11" onKeyUp="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder='请输入手机号码'>  
+			</div>
+			<div class="yanzheng">
+				<span class="yz-ma">
+					<img src="__PUBLIC__/static/JinrPartner/imgs/news.jpg" alt=""/>
+					<input id="yz-ma" maxlength="6" onKeyUp="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder='请输入验证码'>
+				</span>
+				<span class="yz-btn"><input id="btn" class="btn-validate" type="button"  value="获取验证码"></span>
+			</div>
+			<div class="password">
+				 <img src="__PUBLIC__/static/JinrPartner/imgs/password.jpg" alt=""/>
+				 <input id="password-set" type="password" maxlength="16" onKeyUp="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" placeholder='请设置6到16位组合密码'>
+				 <span class="see"><img id="see" src="__PUBLIC__/static/JinrPartner/imgs/close.jpg" alt=""/></span>
+			</div>
+			<div class="agreement">
+				<input id="xieyi" type="checkbox" checked="checked"/>
+				<a href="">我已阅读并同意<span>《鲸鱼用户协议》</span></a>
+			</div>
+		</ol>
+		<script type="text/javascript">  
+		var wait=60;  
+        //wait 的处理可能需要增加
+		function time(o) {  
+            if(wait == 60)
+            {
+                var phone = $('#phone').val();
+                phone = verifyGen(phone, phone_reg, "手机号码");
+                if(!phone)
+                {
+                    return;
+                }
+                $.ajax(
+                    {
+                        "url": "/JinrPartner/Share/sendVerify",
+                        "data": {"phone": phone},
+                        "type": "post",
+                        "dataType": "json",
+                        "async": true,
+                        "success": function(data) {
+                            if(data.status == true)
+                            {
+                                //短信发送成功开始进行倒计时;
+                                    o.setAttribute("disabled", true);  
+                                    o.value= wait + " S";  
+                                     $(".btn-validate").css({"background":"#ccc"});
+                                    wait--;  
+                                    setTimeout(function() {  
+                                        time(o)  
+                                    },  
+                                    1000)  
+                            } else {
+                                //短信发送失败，需要提示;
+                                alert("短信发送失败");
+                            }
+                        }
+                    }
+                );
+            }
+
+            if (wait == 0) {  
+                o.removeAttribute("disabled");
+                o.value="重获验证码";  
+                $(".btn-validate").css({"background":"#1572F5"});
+                wait = 60;  
+            } else {  
+                o.setAttribute("disabled", true);
+                o.value= wait + " S";  
+                 $(".btn-validate").css({"background":"#ccc"});
+                wait--;  
+                setTimeout(function() {  
+                    time(o)  
+                },  
+                1000)  
+            }
+		}  
+		document.getElementById("btn").onclick=function(){time(this);}  
+		</script>
+		
+		<script>
+		/* 密码是否可见 */
+		$(function(){
+			$('#see').toggle(
+				  function (){
+					document.getElementById("password-set").type="text";
+					$(this).attr("src","__PUBLIC__/static/JinrPartner/imgs/open.jpg");
+				 },
+				  function (){
+					document.getElementById("password-set").type="password";
+					$(this).attr("src", "__PUBLIC__/static/JinrPartner/imgs/close.jpg");
+				 }
+			 );
+		})
+		</script>
+		
+		<div class="btns"><a class="btn-get">马上领5000</a></div>
+		
+		<div class="gonglue  gonglue2  know" style="margin-top:8%; margin-bottom:5%;"><p></p></div>
+		<!-- <img class="" src="__PUBLIC__/static/JinrPartner/imgs/liaojie.png" alt=""> -->
+		
+		<nav id="ljjyb" style="display:none;">
+			<div class="jingyubao">
+				<img src="__PUBLIC__/static/JinrPartner/imgs/jingyubao.jpg" alt=""/>
+				<ol>
+					<p>平台安全运营:<span>789</span>天</p>
+					<p>累计用户数:<span>20,1032,55</span>人</p>
+					<p>为投资人赚取:<span>585,5555,525</span> 元</p>
+					<p>累计交易额:<span>128,525,85</span>元</p>
+				</ol>
+				<a class="phone" href="tel:400-840-2015"></a>
+			</div>
+			<p style="height:65px;"></p>
+			<div class="footer footer2 zfoot" style="position: absolute;">
+				<img src="__PUBLIC__/static/JinrPartner/imgs/logo.png" alt=""/>
+				<a class="btn-ling">注册领5000</a>		
+			</div>
+		</nav>
+		<script>
+		$(function(){
+			$(".know p").click(function(){
+				$("#ljjyb").slideToggle(); 
+				$(".know").toggleClass('know2');
+			});
+			
+			$(".btn-ling").click(function(){
+				$("#ljjyb").css({"display":"none"}); 
+				$(".know").removeClass('know2');
+			});
+		})
+		</script>
+
+		
+	</div>
+</div>
+
+<!-- 要想让跑马灯 循环滚动，必需加 -->		
+<span id="tt" title="88614368" style="display:none;">88614368</span>
+<script type="text/javascript"> 
+	/* 数每秒加1 */
+	$(function (){
+		reduceTime();
+		});
+	function reduceTime() {
+			var reduce = $("#tt").html();
+			++reduce;
+			var sec = reduce;
+
+			var atop = $("#tt").attr("title");
+			atop = atop-86400+86400*2;
+			if(reduce != atop){
+					$("#tt").html(sec);
+			}else{
+					$("#tt").html(reduce);
+					return reduce;
+			}
+			setTimeout(reduceTime,2000);
+	}
+</script>
+</block>

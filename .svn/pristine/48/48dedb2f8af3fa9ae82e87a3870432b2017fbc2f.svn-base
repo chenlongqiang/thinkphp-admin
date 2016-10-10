@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 下午06:22
+ */
+namespace Admin\Controller;
+
+class SystemController extends BaseController {
+    
+    public function menuList()
+    {
+
+        $where = array();
+        $fields = '';
+        $page = '';
+        
+        $result = D('Menu')->getList($where, $fields, $page);
+
+        $this->assign('list', $result['list']);
+        $this->display('menu_list');
+    }
+    
+}

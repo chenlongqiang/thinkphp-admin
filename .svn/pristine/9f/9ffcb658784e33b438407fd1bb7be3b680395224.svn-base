@@ -1,0 +1,24 @@
+<extend name="Start/base" />
+<block name="content">
+<div id="m-body">
+	<div class="whole  whole5">
+		<div class="jingyubao">
+			<img src="__PUBLIC__/static/JinrPartner/imgs/jingyubao.jpg" alt=""/>
+			<ol>
+				<p>平台安全运营:<span>789</span>天</p>
+				<p>累计用户数:<span>20,1032,55</span>人</p>
+				<p>为投资人赚取:<span>585,5555,525</span> 元</p>
+				<p>累计交易额:<span>128,525,85</span>元</p>
+			</ol>
+			<a class="phone" href="tel:400-840-2015"></a>
+		</div>
+
+		<p style="height:65px;"></p>
+		<div class="footer  footer2">
+			<a class="btn-ling" href="注册页面.html">马上领5000</a>
+            <a class="btn-liaojie"
+                href="{$getPartnerUrl|default='javascript:;'}" alt="了解鲸鱼宝合伙人">了解鲸鱼宝合伙人</a>		
+		</div>
+	</div>
+</div>
+</block>

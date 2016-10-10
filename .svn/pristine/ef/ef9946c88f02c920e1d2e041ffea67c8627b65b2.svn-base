@@ -1,0 +1,114 @@
+<?php
+/**
+ * 邀请关系模型
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/19
+ */
+
+namespace JinrPartner\Model;
+
+use Common\Base\BaseModel;
+
+class FiftyDetailModel extends BaseModel
+{
+    protected $dbName = 'hbdev';
+    protected $tablePrefix =  'hb_';
+    const EVENT_KEY  = "GAME_TYPE_APP_INVITE_FRIENDS_5";
+
+    /**
+     * 获得昨日 新增投资人
+     * @param int $uid
+     */
+    public function getYesterdayInvite($uid)
+    {
+        return $this->getLevelInfo($uid,true);
+    }
+
+    /**
+     * 获得全部 新增投资人
+     * @param $uid
+     * @return array
+     */
+    public function getAllInvite($uid)
+    {
+        return $this->getLevelInfo($uid);
+    }
+
+    /**
+     * 根据用户id获取用户相关层级投资人关系数组
+     * @param $uid
+     * @param bool $is_new_add 是否显示新增信息
+     * @return array
+     */
+    private function getLevelInfo($uid,$is_new_add = false)
+    {
+        if ($is_new_add ) {
+            $start_time = date('Y-m-d',strtotime("-1 days"));
+            $end_time = date('Y-m-d');
+            $options = array('c_time'=>array('between',array($start_time,$end_time)));
+        } else $options = array();
+        //TODO
+        $level_one = $this->getInvites($uid,$options);//一级投资人
+        $level_two = $this->getInvites($level_one['uids'],$options);//二级投资人
+        $level_three = $this->getInvites($level_two['uids'],$options);//三级投资人
+
+        return array($level_one,$level_two,$level_three);
+    }
+
+    /**
+     * 获取当前邀请关系层级
+     * @param $uids
+     * @param $options
+     * @return array
+     */
+    private function getInvites($uids,$options=array())
+    {
+        if (!$uids)  return array('uids'=>'','count'=>0);
+
+        $where = array(
+            'event_key' => array('eq',self::EVENT_KEY),
+            'u_id' => array('in',(string)$uids),
+        );
+        $where = array_merge($where,$options);
+
+        $lists = $this->where($where)->field('invite_u_id')->select();//查询邀请关系
+
+        $uids = array_reduce($lists,function($result,$v) {
+            if (!empty($v['invite_u_id'])) $result .=','.$v['invite_u_id'];
+            return $result;
+        },'');//降维处理
+        $count = count($lists);
+        return array('uids'=>ltrim($uids,','),'count'=>$count);
+    }
+
+    /**
+     * 根据uid 计算需要发送的红包
+     */
+    public function getRedInfoByUid($uid)
+    {
+        $level_one = $this->getInviteInfo($uid,1); //一层邀请人
+        $level_two = $this->getInviteInfo($level_one['uid'],2);//二层邀请人
+        $level_three = $this->getInviteInfo($level_two['uid'],3);//三层邀请人
+        return array($level_one,$level_two,$level_three);
+    }
+
+    /**
+     * 根据id找出邀请人以及对应计算利率
+     */
+    private function getInviteInfo($invite_uid,$level=1)
+    {
+        static $bonus_config;
+
+        $uid = $this->where(array('invite_u_id'=>array('eq',intval($invite_uid))))->getField('u_id');
+
+        if (!$uid) return array();
+
+        $userInfo = D('Partner')->isPartner($uid);//是否为鲸鱼合伙人
+        if (!$userInfo) return array('uid'=>$uid,'rate'=>0);
+
+        if (!$bonus_config) $bonus_config = C('JINRPARTNER.BONUS');//获取活动利率配置
+        $rate = $bonus_config[$userInfo['level']][0][$level-1];
+        return array('uid'=>$uid,'rate'=>$rate);
+    }
+}

@@ -1,0 +1,30 @@
+<?php 
+namespace JinrPartner\Model;
+use Common\Base\BaseModel;
+
+/**
+ *鲸鱼合伙人model
+ */
+class PartnerModel extends BaseModel
+{
+    protected $_auto = array(
+        array('c_time', '_getTime', self::MODEL_INSERT, 'callback'),
+        array('u_time', '_getTime', self::MODEL_BOTH, 'callback')
+    );
+
+    protected $_validate = array(
+        array('level',array(1,2,3),'值的范围不正确！',0,'in'), //如果存在需要进行验证
+    );
+
+    /**
+     *自动验证回调
+     *
+     * @return string
+     */
+    private function _getTime()
+    {
+        return date('Y-m-d H:i:s');
+    }
+    
+}
+?>

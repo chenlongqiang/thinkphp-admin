@@ -1,0 +1,67 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 下午06:22
+ */
+namespace Admin\Controller;
+
+class SystemController extends BaseController {
+    
+    public function menuList()
+    {
+        //配置
+        $config = array(
+            'page_size' => 10
+        );
+
+        //过滤条件
+        $filter = I('post.filter');
+        
+        //判断是否重置过滤条件
+        $reset = I('post.reset');
+        if (!empty($reset)) {
+            $filter = array();
+        }
+        $where = $this->buildWhereToMenuList($filter);
+        
+        //获取列表
+        $result = D('Menu')->getList($where, I('get.p'), $config['page_size']);
+        
+        $this->assign('page', get_page($result['count'], $config['page_size']));
+        $this->assign('list', $result['list']);
+        $this->assign('filter', $filter);
+        $this->display('menu_list');
+    }
+    
+    private function buildWhereToMenuList($filter)
+    {
+        if (empty($filter)) {
+            return array();
+        }
+        $where = array();
+        if (!empty($filter['status'])) {
+            $where['status'] = array('eq', $filter['status']);
+        }
+        if (!empty($filter['keyword'])) {
+            $where[$filter['option']] = array('like', '%'.$filter['keyword'].'%');
+        }
+        return $where;
+    }
+    
+    public function menuEdit()
+    {
+        $a = I('');
+        
+        //添加
+        D('Menu')->addOne($a['val']);
+        $this->success('操作成功!', U('System/menuList'));
+        
+//        更新
+//        $menu = D('Menu')->update($a['val'], array('id' => 2));
+        
+//        $this->redirect('System/menuList');
+    }
+    
+}

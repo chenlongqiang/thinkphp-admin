@@ -1,0 +1,24 @@
+<?php
+/**
+ * create by 1289
+ */
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+
+class ApiController extends Controller {
+
+    /**
+     * 发送红包接口
+     */
+    public function sendRed()
+    {
+
+        $ddd = D('CashDetail')->addRed(1221,222,3333); //当前用户累计收益,
+
+    }
+
+
+
+
+}

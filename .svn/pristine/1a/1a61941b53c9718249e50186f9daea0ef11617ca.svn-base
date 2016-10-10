@@ -1,0 +1,70 @@
+<?php
+
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+
+class CenterController extends Controller {
+
+    /**
+     * 用户中心首页
+     */
+    public function index()
+    {
+        $uid = 1;
+        $qrcode = create_qrcode('http://www.baidu.com','cccc.png');//二维码生成
+
+        $userInfo = D("Partner")->getUserInfo($uid);//用户等级以及经验
+
+        $yesterdayBonus = D('CashDetail')->getYesterDayBonus($uid); //当前用户昨日收益
+
+        $yesterdayInviteAndInvest = D('CashDetail')->getYesterDayBonusLists($uid,$userInfo['level']); //昨日新增用户以及用户累计投资
+
+        $accumulateBonus = D('CashDetail')->getAllBonusLists($uid); //当前用户累计收益,
+
+        $isFirst = D('User','Logic')->isFist($uid); //当前用户是否首次进入个人中心
+
+        $allAccumulateBonus = D("Partner")->getAllAccumulateBonus(); //鲸鱼宝合伙人用户累计收益列表
+
+        $myRand = D("Partner")->getMyRand(2); //鲸鱼宝合伙人用户累计收益
+
+        $seo = array(
+            'title'=>'鲸鱼宝合伙人个人中心',
+            'keyword'=>'2',
+            'description'=>'ccc'
+        );
+        $this->assign('seo',$seo);
+        $this->assign('qrcode',$qrcode);
+        $this->assign('userInfo',$userInfo);
+        $this->assign('yesterdayBonus',$yesterdayBonus);
+        $this->assign('yesterdayInviteAndInvest',$yesterdayInviteAndInvest);
+        $this->assign('accumulateBonus',$accumulateBonus);
+        $this->assign('isFirst',$isFirst);
+        $this->assign('allAccumulateBonus',$allAccumulateBonus);
+        $this->assign('myRand',$myRand);
+        $this->display();
+    }
+
+    /**
+     * ajax 返回查询鲸鱼宝列表数据
+     */
+    public function getallaccumulatebonus()
+    {
+        $page = I('post.page',1,'intval');
+        $pageSize = I('post.pageSize',5,'intval');
+        $content = D("Partner")->getAllAccumulateBonus($page,$pageSize);
+        $status = 0;
+        $return_content = '';
+        if (!empty($content)) {
+            $status = 1;
+            foreach ($content as $k=>$c) {
+                $phone = tel_privacy($c['phone']);
+                $order = (($page-1) * $pageSize)+1;
+                $return_content .= "<li><label>{$order}</label><a>LV{$c['level']}</a> <span class=\"name\">{$c['name']}</span> <span>$phone</span> <span>累计分红{$c['amount']}元</span></li>";
+            }
+        }
+        $this->ajaxReturn(array('status'=>$status,'con'=>$return_content));
+    }
+
+
+}

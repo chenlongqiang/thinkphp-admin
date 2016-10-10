@@ -1,0 +1,13 @@
+<extend name="Common:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">{:hello()}:<small> {:get_session('admin_auth.name')}</small></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">main</div>
+        <div class="col-lg-4">list</div>
+    </div>
+</block>

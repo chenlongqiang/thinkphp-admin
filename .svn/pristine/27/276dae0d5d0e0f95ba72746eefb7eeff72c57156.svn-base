@@ -1,0 +1,323 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 上午11:42
+ */
+
+function pr($data)
+{
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+}
+
+function dd($data)
+{
+    pr($data);
+    exit;
+}
+
+/**
+ * 以日期为文件的一个简单错误日志
+ * @param $info
+ */
+function simple_error_log($info)
+{
+    simple_log($info, 'error');
+}
+
+/**
+ * 以日期为文件的一个简单信息日志
+ * @param $info
+ */
+function simple_info_log($info)
+{
+    simple_log($info, 'info');
+}
+
+/**
+ * 以日期为文件的一个简单日志
+ * 默认注入key = 0的固定信息,目前仅包含时间
+ * @param $info
+ */
+function simple_log($info, $type)
+{
+    $dir = APP_ROOT.'/Application/Runtime/SimpleLog/';
+    if (!is_dir($dir)) {
+        mkdir($dir, 0777, true);
+    }
+    if (!is_array($info)) {
+        $info = array($info);
+    }
+    //日记时录,时间注入
+    array_unshift($info, array('time' => date('Y-m-d H:i:s')));
+    file_put_contents($dir.$type.'-log-'.date('Y-m-d'), var_export($info, true).PHP_EOL, FILE_APPEND);
+}
+
+/**
+ * Get an item from an array using "dot" notation.
+ *
+ * @param  array   $array
+ * @param  string  $key
+ * @param  mixed   $default
+ * @return mixed
+ * @author 1543
+ */
+function array_get($array, $key, $default = null)
+{
+    if (is_null($key)) return $array;
+
+    if (isset($array[$key])) return $array[$key];
+
+    foreach (explode('.', $key) as $segment)
+    {
+        if ( ! is_array($array) || ! array_key_exists($segment, $array))
+        {
+            return value($default);
+        }
+
+        $array = $array[$segment];
+    }
+
+    return $array;
+}
+
+/**
+ * Remove one or many array items from a given array using "dot" notation.
+ *
+ * @param  array  $array
+ * @param  array|string  $keys
+ * @return void
+ */
+function array_forget(&$array, $keys)
+{
+    $original =& $array;
+
+    foreach ((array) $keys as $key)
+    {
+        $parts = explode('.', $key);
+
+        while (count($parts) > 1)
+        {
+            $part = array_shift($parts);
+
+            if (isset($array[$part]) && is_array($array[$part]))
+            {
+                $array =& $array[$part];
+            }
+        }
+
+        unset($array[array_shift($parts)]);
+
+        // clean up after each pass
+        $array =& $original;
+    }
+}
+
+/**
+ * Get a value from the array, and remove it.
+ *
+ * @param  array   $array
+ * @param  string  $key
+ * @param  mixed   $default
+ * @return mixed
+ */
+function array_pull(&$array, $key, $default = null)
+{
+    $value = array_get($array, $key, $default);
+
+    array_forget($array, $key);
+
+    return $value;
+}
+
+/**
+ * Pluck an array of values from an array.
+ *
+ * @param  array   $array
+ * @param  string  $value
+ * @param  string  $key
+ * @return array
+ */
+function array_pluck($array, $value, $key = null)
+{
+    $results = array();
+
+    foreach ($array as $item)
+    {
+        $itemValue = is_object($item) ? $item->{$value} : $item[$value];
+
+        // If the key is "null", we will just append the value to the array and keep
+        // looping. Otherwise we will key the array using the value of the key we
+        // received from the developer. Then we'll return the final array form.
+        if (is_null($key))
+        {
+            $results[] = $itemValue;
+        }
+        else
+        {
+            $itemKey = is_object($item) ? $item->{$key} : $item[$key];
+
+            $results[$itemKey] = $itemValue;
+        }
+    }
+
+    return $results;
+}
+
+/**
+ * Return the default value of the given value.
+ *
+ * @param  mixed  $value
+ * @return mixed
+ */
+function value($value)
+{
+    return $value instanceof Closure ? $value() : $value;
+}
+
+//获取请求头
+if (!function_exists('getallheaders'))
+{
+    function getallheaders()
+    {
+        $headers = array();
+        foreach ($_SERVER as $name => $value)
+        {
+            if (substr($name, 0, 5) == 'HTTP_')
+            {
+                $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+            }
+        }
+        return $headers;
+    }
+}
+
+/**
+ * 获得当前格林威治时间的时间戳
+ * @return  integer
+ */
+function gmt_time()
+{
+    return date('Y-m-d H:i:s');
+}
+
+/**
+ * 身份证隐私处理
+ * 1.旧身份证15位,新身份证18位
+ * 2.规则:前六，后四显示，中间隐藏
+ * @param $card
+ * @return mixed
+ */
+function card_privacy($card)
+{
+    $len = strlen($card);
+    switch ($len) {
+        case 15:
+            $result = substr_replace($card, '*****', 6, 5);
+            break;
+        case 18:
+            $result = substr_replace($card, '********', 6, 8);
+            break;
+        default:
+            $result = $card;
+            break;
+    }
+    return $result;
+}
+
+/**
+ * 保留两位小数 输出
+ * @param type $number
+ * @param type $isRound 默认false 不会四舍五入
+ * @return type
+ */
+function point_two_num($number, $isRound = false)
+{
+    if ($isRound != false) {    //四舍五入版
+        $res = sprintf("%.2f", $number);
+    } else {                    //不会四舍五入版
+        $res = sprintf("%.2f", substr(sprintf("%.3f", $number), 0, -1));
+    }
+    return $res;
+}
+
+/**
+ *数字金额转换成中文大写金额的函数
+ *String Int  $num  要转换的小写数字或小写字符串
+ *return 大写字母
+ *小数位为两位
+ **/
+function get_amount($num){
+    $c1 = "零壹贰叁肆伍陆柒捌玖";
+    $c2 = "分角元拾佰仟万拾佰仟亿";
+    $num = round($num, 2);
+    $num = $num * 100;
+    if (strlen($num) > 10) {
+        return false;
+//        return "数据太长，没有这么大的钱吧，检查下";
+    }
+    $i = 0;
+    $c = "";
+    while (1) {
+        if ($i == 0) {
+            $n = substr($num, strlen($num)-1, 1);
+        } else {
+            $n = $num % 10;
+        }
+        $p1 = substr($c1, 3 * $n, 3);
+        $p2 = substr($c2, 3 * $i, 3);
+        if ($n != '0' || ($n == '0' && ($p2 == '亿' || $p2 == '万' || $p2 == '元'))) {
+            $c = $p1 . $p2 . $c;
+        } else {
+            $c = $p1 . $c;
+        }
+        $i = $i + 1;
+        $num = $num / 10;
+        $num = (int)$num;
+        if ($num == 0) {
+            break;
+        }
+    }
+    $j = 0;
+    $slen = strlen($c);
+    while ($j < $slen) {
+        $m = substr($c, $j, 6);
+        if ($m == '零元' || $m == '零万' || $m == '零亿' || $m == '零零') {
+            $left = substr($c, 0, $j);
+            $right = substr($c, $j + 3);
+            $c = $left . $right;
+            $j = $j-3;
+            $slen = $slen-3;
+        }
+        $j = $j + 3;
+    }
+
+    if (substr($c, strlen($c)-3, 3) == '零') {
+        $c = substr($c, 0, strlen($c)-3);
+    }
+    if (empty($c)) {
+        return "零元整";
+    }else{
+        return $c . "整";
+    }
+}
+
+/**
+ * 递归返回转义值
+ * @param array || string
+ * @return array || string
+ */
+function hs($value){
+    if (is_array($value)) {
+        foreach ($value as $key => $val) {
+            $value[$key] = hs($val);
+        }
+        return $value;
+    } else {
+        return htmlspecialchars($value, ENT_QUOTES);
+    }
+}
+

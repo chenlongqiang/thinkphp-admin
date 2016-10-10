@@ -1,0 +1,25 @@
+{
+    "name": "jamescauwelier/psredis",
+    "type": "library",
+    "description": "Sentinel client for the popular php redis client",
+    "keywords": ["nosql", "redis", "predis", "sentinel"],
+    "authors": [
+        {
+            "name": "James Cauwelier",
+            "email": "james.cauwelier@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4",
+        "predis/predis": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7",
+        "phake/phake": "@stable"
+    },
+    "autoload": {
+        "psr-0": {"Sentinel": "lib/", "PSRedis": "lib/"}
+    }
+}

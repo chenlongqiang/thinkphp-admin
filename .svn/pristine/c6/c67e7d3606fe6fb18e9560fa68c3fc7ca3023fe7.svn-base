@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/20
+ */
+
+namespace JinrPartner\Model;
+
+use Common\Base\BaseModel;
+
+class PartnerBonusModel extends BaseModel
+{
+    const GET_MONEY_OK = 3; //现金已获得
+
+    protected $_auto = array(
+    array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+);
+    /**
+     * 获取当前用户ids中 针对uid 发放的红包
+     * @param $to_uid
+     * @param $uids
+     * @return float
+     */
+    public function getUserBounsByUids($to_uid,$uids)
+    {
+        $result = $this->table('jrgame.jr_partner_bonus as bonus,hbdev.hb_cash_detail as cash')->where(
+            "bonus.to_uid = $to_uid and bonus.invest_uid in ($uids) and bonus.bonus_id = cash.id and cash.status = ".self::GET_MONEY_OK
+        )->Sum('bonus.money');
+
+        return $result ? $result :0.00;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{$title}</title>
+
+    <!-- jQuery -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- MetisMenu CSS -->
+    <link href="https://cdn.bootcss.com/metisMenu/1.1.3/metisMenu.min.css" rel="stylesheet">
+
+    <!-- MetisMenu Plugin JavaScript -->
+    <script src="https://cdn.bootcss.com/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+    <!-- Custom CSS 自定义-->
+    <link href="__PUBLIC__/static/admin/css/sb_admin_2.css" rel="stylesheet">
+
+    <!-- Custom Theme JavaScript 自定义-->
+    <script src="__PUBLIC__/static/admin/js/sb_admin_2.js"></script>
+
+    <!-- Custom Fonts 自定义-->
+    <link href="https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS 时间轴-->
+    <!--<link href="../dist/css/timeline.css" rel="stylesheet">-->
+
+    <!-- Morris Charts CSS 时序图/折线图-->
+    <!--<link href="../bower_components/morrisjs/morris.css" rel="stylesheet">-->
+
+    <!-- Morris Charts JavaScript 时序图/折线图-->
+    <!--<script src="../bower_components/raphael/raphael-min.js"></script>-->
+    <!--<script src="../bower_components/morrisjs/morris.min.js"></script>-->
+    <!--<script src="../js/morris-data.js"></script>-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <include file="Common:navbar"/>
+
+        <div id="page-wrapper">
+            <block name="content"></block>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <div id="footer" style="text-align: center;padding:10px 0">footer</div>
+</body>
+
+</html>

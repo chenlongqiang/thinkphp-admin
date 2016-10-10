@@ -1,0 +1,39 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/20
+ */
+
+namespace JinrPartner\Model;
+
+use Common\Base\BaseModel;
+
+class PartnerOrdersModel extends BaseModel
+{
+
+    protected $_auto = array(
+        array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+    );
+
+    /**
+     * 获取用户投资金额
+     * @param $uids
+     * @return float
+     */
+    public function getUserInvestMoney($uids)
+    {
+        $amount = $this->where(array(
+            'uid'=>array('in',(string)$uids),
+        ))->Sum('money');
+        return $amount ? $amount :0.00;
+    }
+
+    /**
+     * 判断订单是否已经处理过
+     */
+    public function isHandleOrder($order_id)
+    {
+        return $this->where(array('order_id'=>array('eq',strip_tags($order_id))))->getField('id');
+    }
+}

@@ -1,0 +1,2478 @@
+[ 2016-09-20T00:04:58+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003074s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:04:58+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003909s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:05:28+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003127s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:05:28+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002159s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:15+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004748s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:15+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:26+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003475s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:26+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:40+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:06:41+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:09:16+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002692s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:09:16+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002237s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:10:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003507s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:10:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003075s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:02+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002997s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:02+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003968s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:09+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:09+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:11+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:12+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004139s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001843s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:30+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010870s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:30+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:35+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004590s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:35+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002740s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:55+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004210s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:11:55+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:15+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006409s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:15+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002356s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002436s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:26+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002901s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:26+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001566s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005533s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002434s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:34+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003364s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:34+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002094s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:45+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003435s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:46+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001600s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:52+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004480s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:12:52+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001801s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:14:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000352s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002589s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:14:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002239s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000604s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007627s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001897s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:32+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004993s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:33+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:36+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:37+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002290s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:41+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002282s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:41+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:51+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002844s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:51+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002539s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002684s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:58+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001869s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:15:59+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:05+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002751s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:05+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001759s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:14+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006577s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:14+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003222s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005277s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001544s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:32+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002809s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:32+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:38+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002849s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:16:38+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003021s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:17:14+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002634s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:17:14+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002036s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:17:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002470s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:17:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002293s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:18:23+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003683s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:18:23+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004121s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:20:59+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005512s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:20:59+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002132s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:23:06+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005066s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:23:06+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002280s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:27:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003252s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:27:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002151s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:27:56+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004860s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:27:56+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004621s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:27:56+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003285s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:30:14+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001889s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:30:15+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005864s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:30:15+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002700s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:31:37+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038790s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:31:37+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003568s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:31:37+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003421s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:31:37+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005982s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:31:37+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002712s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:33:56+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005018s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:33:56+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002020s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:34:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006463s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:34:54+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001570s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:27+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002161s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:27+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004397s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:42+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007805s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:42+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002215s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:52+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003757s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:35:52+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:08+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002064s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:08+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002820s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:11+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002696s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:11+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002362s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:17+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002545s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:17+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002181s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004237s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:22+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:22+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002213s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:51+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:51+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003432s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:55+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002791s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:55+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:58+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002005s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:36:58+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:01+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002916s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:01+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002343s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:03+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002941s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:03+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:08+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002846s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:08+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:17+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003161s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:17+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005226s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:37:50+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001916s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:16+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001847s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:16+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002280s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001855s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:18+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001841s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002564s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:21+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001739s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:21+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:22+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003936s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:23+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:23+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:38:23+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:43:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002551s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:43:20+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:48:00+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003985s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:48:00+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001899s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:48:05+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002033s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:48:05+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:07+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:07+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001462s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:34+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005258s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:34+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:40+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001765s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:40+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002836s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:41+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002902s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T00:49:42+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001938s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:38:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002376s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:38:29+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002418s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:38:42+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:38:42+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:05+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003111s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:06+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002289s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:07+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010381s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:07+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:09+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.woff?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002337s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T08:56:09+08:00 ] 192.168.44.1 /Public/static/fonts/fontawesome-webfont.ttf?v=4.2.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:23+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005009s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006219s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002462s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:33+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008530s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:33+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013130s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:09:33+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014288s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:11:49+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013867s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:11:49+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007643s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:11:49+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008098s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005074s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:00+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003038s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:02+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006446s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:02+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010495s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T09:14:02+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005264s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:51:44+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006753s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:51:44+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002231s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:51:44+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002886s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:11+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003730s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:11+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:11+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007314s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008420s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002236s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:53:39+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018678s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:54:48+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:54:48+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001612s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:54:48+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009756s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:59:58+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005233s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:59:58+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009799s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T10:59:59+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006100s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:06:16+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007919s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:06:16+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026490s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:06:16+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003353s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:08:05+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004328s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:08:05+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006094s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:08:05+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008895s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:09:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005216s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:09:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004022s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:09:43+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003569s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:29+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010062s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:29+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002856s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:29+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003152s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:52+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:52+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004076s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:12:52+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003288s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:13:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006872s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:13:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002969s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:13:23+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003831s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:14:09+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003586s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:14:09+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004641s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:14:09+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002299s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023684s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001895s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:51+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003729s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:57+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014721s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:57+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007351s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:15:57+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009550s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:16:28+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001883s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:16:28+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001971s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:16:28+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001964s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:18:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007033s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:18:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005890s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:18:30+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022161s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:32+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005305s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:32+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000342s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005083s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:32+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004363s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004116s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005452s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:43+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007362s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:54+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010514s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:54+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T11:24:54+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004802s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:17+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004353s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:17+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007617s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:17+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003443s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:24+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005901s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:24+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005426s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:24+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009791s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:37+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002887s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:37+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004828s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:37+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002940s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004514s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004829s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:39+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006154s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006491s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:43+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003099s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006460s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:47+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003664s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:47+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004459s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:47+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040716s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003914s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008149s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:36:51+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008934s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:02+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006777s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:03+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005937s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:03+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022684s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004181s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:07+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008565s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:37:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003537s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012750s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003785s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:00+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003731s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010915s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:07+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004758s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004173s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004499s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:38+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005315s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:38+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003299s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:38+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004473s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:41+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005676s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:41+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004730s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:41+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003603s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:50+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006830s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:50+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:50+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003513s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:58+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007470s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:58+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005872s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:38:58+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006921s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:39:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012018s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:39:30+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004585s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:39:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004387s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:41:44+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004839s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:41:45+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004903s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:41:45+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003275s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:08+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000829s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013908s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:08+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006074s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:08+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006683s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:19+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000309s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011792s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:19+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003849s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:19+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004517s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:31+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010531s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:31+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013851s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:42:31+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003571s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:47:40+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010562s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:47:40+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015904s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:47:40+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032885s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:18+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003587s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:18+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008366s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:18+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005608s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:37+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002073s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:38+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004084s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:49:38+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005058s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:50:38+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002708s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:50:38+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003184s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:50:38+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:35+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005010s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:35+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005368s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:35+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007492s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008558s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:39+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006756s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:39+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006034s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:42+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004195s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:42+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005090s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:42+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004909s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:51+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005518s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016371s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:51+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019270s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:54+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035477s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:54+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006761s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:51:54+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006813s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:06+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005066s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:06+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003357s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:06+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011034s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:36+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002522s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:36+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007836s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:36+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003838s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:46+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000357s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006815s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:46+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002957s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:46+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008623s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:49+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006589s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:49+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005804s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:52:49+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004428s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:55:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004043s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:55:30+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004578s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:55:30+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006331s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008882s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:23+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009146s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:23+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005639s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002384s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:43+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002481s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:56:43+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003744s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:09+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005140s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:09+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005929s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:09+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005807s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:19+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002353s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:19+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003768s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:19+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003546s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:28+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006558s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:29+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005009s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:29+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003691s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:58+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006768s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:58+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003774s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:57:58+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004483s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024438s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023830s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:00+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010650s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:34+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009245s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:35+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004613s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:58:35+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002106s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:59:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011514s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:59:00+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003824s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T14:59:00+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004350s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:02+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005061s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:02+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009852s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:02+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007783s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:05+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005846s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:05+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003244s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:00:05+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008181s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:11+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005579s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:11+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004644s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:11+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005541s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:17+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000732s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007080s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:17+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006559s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:17+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013081s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:20+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005704s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:20+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005391s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:01:20+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002705s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:11+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003490s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:12+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005272s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:12+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004016s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:41+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007790s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:41+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011054s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:41+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009694s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:47+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009354s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:47+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004800s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:47+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008012s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:50+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004381s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:50+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003306s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:50+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010645s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:56+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012904s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:56+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010793s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:56+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005240s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:59+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019354s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:59+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039949s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:05:59+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004560s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:01+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004411s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:01+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006878s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:01+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008338s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006901s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:07+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013445s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:06:07+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.034804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.071853s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:18+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005055s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:18+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008396s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:18+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003452s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:20+08:00 ] 192.168.44.1 /Public/static/admin/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:20+08:00 ] 192.168.44.1 /Public/static/admin/jquery.validator.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015466s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-20T15:15:20+08:00 ] 192.168.44.1 /Public/static/admin/zh-CN.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007870s ]
+ERR: 无法加载模块:Public
+

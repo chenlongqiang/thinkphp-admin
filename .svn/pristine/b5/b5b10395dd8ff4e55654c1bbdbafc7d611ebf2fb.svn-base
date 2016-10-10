@@ -1,0 +1,13 @@
+<?php
+
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+
+class IndexController extends Controller {
+    public function index(){
+//        $this->display();
+        $a = C('JINRPARTNER');
+        dd($a);
+    }
+}

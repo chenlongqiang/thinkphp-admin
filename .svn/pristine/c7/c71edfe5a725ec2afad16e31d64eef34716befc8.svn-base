@@ -1,0 +1,16 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/15
+ * Time: 上午10:00
+ */
+
+namespace Common\Base;
+
+use Think\Model;
+
+class HBBaseModel extends BaseModel 
+{
+    protected $connection = 'DB_HB';
+}

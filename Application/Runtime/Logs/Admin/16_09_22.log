@@ -1,0 +1,634 @@
+[ 2016-09-22T16:56:29+08:00 ] 192.168.44.1 /Admin/System/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003697s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0528s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0504s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0401s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.1940s ]
+SQL: SELECT * FROM `jr_menu` WHERE `level` = 1 ORDER BY sort asc,id asc LIMIT 0,10   [ RunTime:0.0915s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jr_menu` WHERE `level` = 1 LIMIT 1   [ RunTime:0.0701s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [2] Illegal string offset 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003484s ]
+
+[ 2016-09-22T16:56:32+08:00 ] 192.168.44.1 /Admin/xxx/xxx/a/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+ERR: 无法加载控制器:Xxx
+
+[ 2016-09-22T17:17:00+08:00 ] 192.168.44.1 /Admin/System/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004567s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1016s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.1128s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0504s ]
+SQL: SELECT * FROM `jr_menu` WHERE `level` = 1 ORDER BY sort asc,id asc LIMIT 0,10   [ RunTime:0.0579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jr_menu` WHERE `level` = 1 LIMIT 1   [ RunTime:0.0471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [2] Illegal string offset 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003527s ]
+
+[ 2016-09-22T17:17:06+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.1658s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2165s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0972s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0384s ]
+SQL: SHOW COLUMNS FROM `hbdev`.`hb_cash_detail` [ RunTime:0.1296s ]
+SQL: SELECT * FROM hbdev.hb_cash_detail WHERE `event_key` = 'GAME_TYPE_XIAN_JIN_HUO_DONG' ORDER BY id desc LIMIT 0,20   [ RunTime:0.4487s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hbdev.hb_cash_detail WHERE `event_key` = 'GAME_TYPE_XIAN_JIN_HUO_DONG' LIMIT 1   [ RunTime:0.1877s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000796s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001014s ]
+NOTIC: [8] Undefined variable: title /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 12 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 154 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 155 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 155 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 157 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 158 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 158 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 154 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 188 行.
+NOTIC: [8] Undefined variable: filter /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 188 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 189 行.
+NOTIC: [8] Undefined variable: filter /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 189 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 193 行.
+NOTIC: [8] Undefined variable: filter /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 193 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+NOTIC: [8] Undefined index: phone /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 225 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 227 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/5b0130015c878c849f44e457b4bca56e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002697s ]
+
+[ 2016-09-22T17:17:26+08:00 ] 192.168.44.1 /Admin/JinPartner/updateStatus/id/863.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003479s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.1297s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0803s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0415s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `hbdev`.`hb_yield` [ RunTime:0.1496s ]
+NOTIC: D方法实例化没找到模型类Jinpartner\Model\CashDetailModel
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T17:21:56+08:00 ] 192.168.44.1 /Admin/JinPartner/updateStatus/id/863.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003586s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0872s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0959s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.1014s ]
+SQL: SHOW COLUMNS FROM `hbdev`.`hb_yield` [ RunTime:0.0567s ]
+NOTIC: D方法实例化没找到模型类JinPartner\Model\CashDetailModel
+
+[ 2016-09-22T18:05:36+08:00 ] 192.168.44.1 /Admin/System/menuList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003755s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0518s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0322s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.1473s ]
+SQL: SELECT * FROM `jr_menu` WHERE `level` = 1 ORDER BY sort asc,id asc LIMIT 0,10   [ RunTime:0.0357s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jr_menu` WHERE `level` = 1 LIMIT 1   [ RunTime:0.0949s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000962s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 155 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 156 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 157 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 158 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 159 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 153 行.
+NOTIC: [8] Use of undefined constant sub - assumed 'sub' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 154 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 209 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [2] Illegal string offset 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 210 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 217 行.
+NOTIC: [8] Use of undefined constant option - assumed 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [2] Illegal string offset 'option' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 218 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [2] Illegal string offset 'keyword' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Uninitialized string offset: 0 /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 222 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 263 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /vagrant/jrgame/Application/Runtime/Cache/Admin/7b8a7f5c6d604e31f482515facba78f0.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004690s ]
+
+[ 2016-09-22T18:05:42+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004163s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0758s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1572s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0999s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.1279s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:06:15+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0837s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0612s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.1389s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:07:10+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004699s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0975s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0816s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0318s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:08:13+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003685s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0389s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0246s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:10:50+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004030s ]
+
+[ 2016-09-22T18:10:57+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003053s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.6475s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.5953s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.4595s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.4898s ]
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:12:15+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003536s ]
+
+[ 2016-09-22T18:12:32+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+
+[ 2016-09-22T18:13:16+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002892s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0495s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.4035s ]
+
+[ 2016-09-22T18:13:23+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003545s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0658s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0501s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0679s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0487s ]
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:14:10+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003771s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0529s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0248s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0390s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:14:19+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003380s ]
+ERR: 1146:Table 'jrgame.jr1_admin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr1_admin`
+ERR: 1146:Table 'jrgame.jr1_admin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr1_admin`
+
+[ 2016-09-22T18:17:57+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002842s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0292s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0256s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0268s ]
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:20:35+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.4032s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.4472s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.5712s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.4352s ]
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'jrgame.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:21:36+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004145s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.4963s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.3890s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.5677s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.4228s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:24:18+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002846s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0780s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0327s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+
+[ 2016-09-22T18:29:20+08:00 ] 192.168.44.1 /Admin/JinPartner/redList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002667s ]
+SQL: SHOW COLUMNS FROM `jr_admin` [ RunTime:0.0561s ]
+SQL: SELECT * FROM `jr_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0268s ]
+SQL: SHOW COLUMNS FROM `jr_menu` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`name`,`pid`,`path`,`icon` FROM `jr_menu` WHERE `status` = 1 ORDER BY level desc,sort asc,id asc  [ RunTime:0.0204s ]
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+ERR: 1146:Table 'hbdev.jr_cash_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `jr_cash_detail`
+

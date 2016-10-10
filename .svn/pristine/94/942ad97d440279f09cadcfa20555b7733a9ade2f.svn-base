@@ -1,0 +1,176 @@
+<?php
+/**
+ *
+ * 红包发放模型
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/19
+ */
+
+namespace JinrPartner\Model;
+
+use Common\Base\BaseModel;
+use Think\Exception;
+
+class CashDetailModel extends BaseModel
+{
+    protected $dbName = 'hbdev';
+    protected $tablePrefix = 'hb_';
+    const EVENT_KEY = "GAME_TYPE_APP_INVITE_FRIENDS_5";//活动事件
+    const GET_MONEY_OK = 3; //现金已获得
+
+    protected $_auto = array(
+        array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+        array('u_time', 'gmt_time', self::MODEL_BOTH, 'function'),
+    );
+    /**
+     * 根据用户id获取昨日分红数据信息
+     * @param $uid
+     */
+    public function getYesterDayBonus($uid)
+    {
+        $start_time = date('Y-m-d', strtotime("-1 days"));
+        $end_time = date('Y-m-d');
+        $where = array(
+            'uid' => array('eq', intval($uid)),
+            'event_key' => array('eq', self::EVENT_KEY),
+            'status' => array('eq', self::GET_MONEY_OK),
+            'get_time' => array('between', array($start_time, $end_time)),
+        );
+        $sumMoney = $this->where($where)->Sum('money');
+        return $sumMoney ? $sumMoney : 0.00;
+
+    }
+
+    /**
+     * 获取昨日分红列表
+     * level 用户等级
+     */
+    public function getYesterDayBonusLists($uid, $user_level)
+    {
+        $yesterdayInvite = D('FiftyDetail')->getYesterdayInvite($uid);//获取昨日新增投资人
+        $return = array();
+        $level_config = array('一', '二', '三');
+        $bonus_config = C('JINRPARTNER.BONUS');//获取活动利率配置
+
+        if (is_array($yesterdayInvite) && !empty($yesterdayInvite)) foreach ($yesterdayInvite as $k => $level) {
+            $amount = 0.00;
+            if (!empty($level['uids'])) {
+                //检索当前层级的用户的累计投资额
+                $amount = D('PartnerOrders')->getUserInvestMoney($level['uids']);
+            }
+            $rate = $bonus_config[$user_level][0][$k];
+            $return[] = array('numbers' => $level['count'], 'amount' => $amount, 'level' => $level_config[$k], 'rate' => $rate);
+        }
+        return $return;
+    }
+
+
+    /**
+     * 获取累计分红记录
+     */
+    public function getAllBonusLists($uid)
+    {
+        $levelInfo = D('FiftyDetail')->getAllInvite($uid);//获取层级关系
+
+        $return = array();
+        $level_config = array('一', '二', '三');
+        if (is_array($levelInfo) && !empty($levelInfo)) foreach ($levelInfo as $k => $level) {
+            $amount = 0.00;
+            if (!empty($level['uids'])) {
+                //检索当前层级的累计红包
+                $amount = D('PartnerBonus')->getUserBounsByUids($uid, $level['uids']);
+            }
+            $return[] = array('numbers' => $level['count'], 'amount' => $amount, 'level' => $level_config[$k]);
+        }
+        return $return;
+    }
+
+    /**
+     * 添加红包以及相关处理
+     */
+    private function addRedPackets($invest_id,$money)
+    {
+        //TODO
+        $lists = $this->reckonRedRate($invest_id);
+        if (is_array($lists)) foreach ($lists as $r) {
+            if ($r['uid'] && $r['rate']) {
+                $this->addRedInfo($invest_id,$r['uid'],($r['rate']/100)*$money);
+            }
+        }
+    }
+
+    /**
+     * 根据等级计算红包利率
+     */
+    private function reckonRedRate($invest_id)
+    {
+        //TODO
+        return D('FiftyDetail')->getRedInfoByUid($invest_id);
+    }
+
+    /**
+     * 添加红包信息
+     */
+    private function addRedInfo($invest_uid,$uid,$money)
+    {
+        $this->startTrans();
+        //添加到红包表
+        $addInfo['uid'] = $uid;
+        $addInfo['event_key'] = self::EVENT_KEY;
+        $addInfo['money'] = $money;
+        $addInfo['status'] = 1;
+        $addInfo['days'] = 1;
+        $r = $this->addOne($addInfo);
+
+        //添加到鲸鱼合伙人红包记录表
+        $rs = D('PartnerBonus')->addOne(array(
+            'invest_uid' => intval($invest_uid),
+            'to_uid' => intval($uid),
+            'bonus_id' => intval($r),
+            'money' => (float)$money,
+        ));
+
+        //更新鲸鱼宝合伙人经验
+        $update_result = D('Partner')->updateInfo($invest_uid,$money);
+
+        if ($r && $rs && $update_result)
+        {
+            $this->commit();
+            return true;
+        }
+        else
+        {
+            $this->rollback();
+            return false;
+        }
+    }
+
+    /**
+     * 添加红包
+     */
+    public function addRed($order_id,$invest_id,$money)
+    {
+        try
+        {
+            //判断订单是否已经处理过  处理过 直接return
+            $isHandle = D('PartnerOrders')->isHandleOrder($order_id);
+            if ($isHandle) return true;
+
+            //添加order记录到鲸鱼合伙人订单表
+            $addData['order_id'] = strip_tags($order_id);
+            $addData['uid'] = intval($invest_id);
+            $addData['money'] = (float)$money;
+            D('PartnerOrders')->addOne($addData);
+
+            //执行发红包
+            $this->addRedPackets($invest_id,$money);
+
+        } catch (Exception $e) {
+            E($e->getMessage());
+        }
+
+    }
+
+
+}

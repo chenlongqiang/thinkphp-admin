@@ -1,0 +1,65 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/13
+ * Time: 下午10:10
+ */
+
+namespace Admin\Model;
+
+use Common\Model\BaseModel;
+
+class MenuModel extends BaseModel
+{
+    const STATUS_ON = 1;
+    const STATUS_OFF = 2;
+    
+    const LEVEL_FIRST = 1;
+    const LEVEL_SECOND = 2;
+    const LEVEL_THIRD = 3;
+    
+    //顶级菜单pid
+    const DEFAULT_PID = 0;
+    
+    protected $_auto = array(
+        array('c_time', 'gmt_time', self::MODEL_INSERT, 'function'),
+        array('u_time', 'gmt_time', self::MODEL_BOTH, 'function'),
+    );
+
+    /**
+     * 组装数据
+     * 技巧:先从最末层往上层拼数据 $menus 为层级倒序的数据
+     * @param $menus
+     * @return mixed
+     */
+    public static function organizeMenu($menus)
+    {
+        $lists = $menus;
+        //菜单整理
+        foreach ($menus as $k => $menu) {
+            $pid_key = array_search($menu['pid'], array_column($menus, 'id'));
+            if ($pid_key === false) {
+                continue;
+            }
+            //获取组装菜单数据
+            $list = array_pull($lists, $k);
+            //把菜单放到相应的pid下
+            array_set($lists, $pid_key.'.sub.'.self::getSubArrayKey($menu['pid']), $list);
+        }
+        return $lists;
+    }
+
+    //获取menu该id列,目前key的位置
+    private static $sub_keys = array();
+    private static function getSubArrayKey($id)
+    {
+        if (!isset(self::$sub_keys[$id])) {
+            self::$sub_keys[$id] = 0;
+            return 0;
+        } else {
+            return ++self::$sub_keys[$id];
+        }
+    }
+    
+}

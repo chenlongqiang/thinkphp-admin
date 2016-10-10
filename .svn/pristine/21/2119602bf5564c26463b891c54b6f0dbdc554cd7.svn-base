@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/12
+ * Time: 下午06:22
+ */
+namespace Admin\Controller;
+
+class SystemController extends BaseController {
+    
+    public function menuList()
+    {
+        $result = D('Menu')->getList();
+        $this->assign('list', $result['list']);
+        $this->display('menu_list');
+    }
+    
+    public function menuEdit()
+    {
+        $a = I('');
+        
+        $a['val']['icon'] = date('His');
+        $menu = D('Menu')->update($a['val'], 'id=2');
+        $menu = D('Menu')->update($a['val']);
+        dd($menu);
+        
+        $menu = D('Menu')->addOne($a['val']);
+//        $menu = D('Menu')->addOne($a);
+//        if ($menu === false) {
+//            var_dump('aa');
+//            E('test');
+//        }
+        $this->redirect('System/menuList');
+    }
+    
+}

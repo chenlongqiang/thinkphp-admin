@@ -1,0 +1,43 @@
+<?php
+
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+
+/**
+  *鲸鱼合伙人首页类 
+  *
+  * @access public
+  */
+class StartController extends Controller
+{
+    
+    /**
+     *鲸鱼合伙人默认首页
+     *
+     * @return none
+     */
+    public function index() 
+    {
+        try {
+            $this->display("Start/index");
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+    /**
+     *用户投资页面
+     *
+     * @return none
+     */
+    public function invest()
+    {
+        try {
+
+            $this->display("Start/invest");
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }   
+    }
+}

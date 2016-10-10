@@ -1,0 +1,122 @@
+<?php
+
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+use JinrPartner\Logic\UserLogic;
+
+/**
+  *鲸鱼合伙人首页类 
+  *
+  * @access public
+  */
+class StartController extends Controller
+{
+    
+    /**
+     *鲸鱼合伙人默认首页
+     *
+     * @return none
+     */
+    public function index() 
+    {
+        try {
+            $uid = I('get.uid');
+            $huserLogic = D('User', 'Logic');
+            
+            $uid = 1;
+
+            //获取用户id，如果存在则向主站请求用户数据
+            if ($uid) {
+                $uinfo = $huserLogic->judgeUser($uid);
+                !$uinfo && $uid = null;
+            }
+
+            //统计鲸鱼合伙人数量及分红总数量
+            $tmpRes = $this->getTotal();;
+            $investUrl = U("invest");
+                
+            $this->assign("title", "鲸鱼合伙人");  //header title 部分
+            $this->assign("investUrl", $investUrl);
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("uid", $uid);
+            $this->display("Start/index");
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    
+    /**
+     *平台累计合伙人和累计分红
+     *
+     * @return array
+     */
+    public function getTotal()
+    {
+        try {
+            $res = array(
+                'partners' => 0,
+                'totalBonus' => 0
+            );
+            $huserLogic = D('User', 'Logic');
+            $res['partners'] = $huserLogic->getTotalPartners();   //模拟总合伙人数据
+            $res['totalBonus'] =31763836 ;
+
+            return $res;
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+        return null;
+    }
+    
+
+    /**
+     *用户投资页面
+     *
+     * @return none
+     */
+    public function invest()
+    {
+        try {
+            $uid = I('get.uid');
+            $uid = 1;
+
+            $tmpRes = $this->getTotal();
+            $huserLogic = D('User', 'Logic');
+            $res = $huserLogic->getUserLevel($uid);
+
+            !(isset($res['rest'])&& $res['rest']) && $res['rest'] = 0;;
+            $this->assign("partners", $tmpRes['partners']);
+            //$this->assign("title", "鲸鱼合伙人");
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign('level', $res['level']);
+            $this->assign('grade', $res['grade']);
+            $this->assign('rest', $res['rest']);
+            $this->assign("startLevel", UserLogic::NEW_USER_INVEST_START);
+            
+            $this->display("Start/invest");
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }   
+    }
+
+    /**
+     *获取用户的身份验证， 判断用户是否是鲸鱼合伙人
+     *
+     * @return array 
+     */
+    public function getUserIdentity()
+    {
+        try {
+            $uid = I('post.uid', 1);
+            $huserLogic = D('User', 'Logic');
+            $res = $huserLogic->getUserLevel($uid);
+            $this->ajaxReturn($res);
+            //获取用户累计投资金额
+        } catch(\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+}

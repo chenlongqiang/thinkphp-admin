@@ -1,0 +1,340 @@
+<extend name="Start/base" />
+<block name="content">
+<!-- 非合伙人已领取红包 --> 
+<nav class="hidden  no-partner"> 
+	<div class="tankuang  npa"> 
+		<p class="ceng" style="height:100%;"></p>
+		<ol>
+			<p class="sa sa1">尊敬的鲸鱼财主</p>
+			<p class="sb">您已经领取过5000元新手红包</p>
+			<p class="sa sa2">赶快加入鲸鱼合伙人<br>领取每日高额分红吧</p>
+            <p
+                class="sc">当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人，<br>累计发放分红<span>{$totalBonus|default=0}</span>元</p>
+		</ol>
+		<a class="anniu  anniu1"></a>
+	</div>
+	<div class="footer">
+		<a class="btn-go" href="http://um0.cn/5tVSx">去APP加入鲸鱼合伙人</a>
+	</div>
+</nav> 
+<div class="footer  pfoot  no-partner-footer" style="display:none">
+	<a class="btn-go" href="http://um0.cn/5tVSx">去APP加入鲸鱼合伙人</a>
+</div>
+
+
+<!-- 合伙人已领取红包 --> 
+<nav class="hidden  partner"> 
+	<div class="tankuang  pa"> 
+		<p class="ceng" style="height:100%;"></p>
+		<ol>
+			<p class="sa sa1">尊敬的鲸鱼合伙人</p>
+			<p class="sb">您已经领取过5000元新手红包</p>
+			<p class="sa sa2">赶快邀请更多合伙人<br>赚高额分红吧</p>
+			<p
+                class="sc">当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人，<br>累计发放分红<span>{$totalBonus|default=0}</span>元</p>
+		</ol>
+		<a class="anniu  anniu2" href="http://um0.cn/5tVSx"></a>
+	</div>
+</nav>
+<div class="footer  pfoot  partner-footer" style="display:none">
+	<a class="btn-invite">邀请更多鲸鱼合伙人</a>
+</div> 
+
+
+<script>
+$(function(){
+	$(".npa .ceng ,.npa ol").click(function(){
+		$(".no-partner,.no-partner-footer").fadeOut();
+	})
+	
+	$(".pa .ceng ,.pa ol").click(function(){
+		$(".partner,.partner-footer").fadeOut();
+	})
+	
+	$(".anniu1").click(function(){
+		$(".tanqi1").animate({"top":"0"},200);
+	})
+	
+	$(".gonglue2").click(function(){
+		$(".tanqi1").animate({"top":"100%"},200);
+	})
+})
+</script>
+
+<div class="whole  whole2  tanqi1">
+	<ol class="rolling">
+		<img src="__PUBLIC__/static/JinrPartner/imgs/sound.png">
+		<p class="rolling_p">
+			<marquee direction="left" width="100%" height="30px" scrolldelay="0" scrollamount="4" style="height: 30px; width: 100%;">
+				<ul class="rolling_list">
+                    <li>当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人</li>
+                    <li>累计发放分红<span class="yuan">{$totalBonus|default=0}</span>元</li>
+				</ul>
+			</marquee>
+		</p>
+	</ol>
+	
+	<img class="index2-img" src="__PUBLIC__/static/JinrPartner/imgs/index2.jpg" alt="">
+	<div class="index-content2">
+		<div class="gonglue  gonglue2"><img src="__PUBLIC__/static/JinrPartner/imgs/gonglue2.png" alt=""></div>
+	</div>	
+	<ul class="gonglue-list">
+		<li>
+			<h1><span>如何成为鲸鱼合伙人？</span></h1>
+			<div class="detail" style="display:none;">
+				<p>1、所有投资经验值≥5000的鲸鱼宝新老用户均可成为鲸鱼合伙人。投资经验值越高，合伙人等级越高。</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th>投资经验值<span>X</span>
+								</th><th>合伙人等级
+							</th></tr>
+							<tr>	
+								<td>5,000≤<span>X</span>＜20,000</td>
+								<td>LV1</td>
+							</tr>
+							<tr>	
+								<td>20,000≤<span>X</span>＜50,000</td>
+								<td>LV2</td>
+							</tr>
+							<tr>	
+								<td><span>X</span>≥50,000</td>
+								<td>LV3</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<p>2、用户通过【鲸鱼合伙人】活动页面投资定期产品，投资多少即可积累多少投资经验值。</p>
+				<p>3、老用户有礼（8月22日之前完成注册的）：为回馈鲸鱼宝老用户，活动期间，老用户只要进入活动页面点击加入鲸鱼合伙人，即可获得经验值奖励，直接成为鲸鱼合伙人。 具体奖励如下：</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th>老用户定期账户金额Y
+								</th><th>奖励投资经验值
+							</th></tr>
+							<tr>	
+								<td><span>Y</span>＜50,000</td>
+								<td>5,000</td>
+							</tr>
+							<tr>	
+								<td>5,000S<span>Y</span>＜20,000</td>
+								<td>20,000</td>
+							</tr>
+							<tr>	
+								<td><span>X</span>≥20,000</td>
+								<td>50,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</li>
+		<li>
+			<h1><span>鲸鱼合伙人的分红如何计算？</span></h1>
+			<div class="detail" style="display:none;">
+				<h2>只有通过【鲸鱼合伙人】活动页面投资的金额，才产生分红。</h2>
+				<p>1、鲸鱼合伙人的分红= 一级投资人投资额X分红比例+二级投资人投资额X分红比例+三级投资人投资额X分红比例。</p>
+				<p>2、分红比例由鲸鱼合伙人的等级和投资人与合伙人的关系层级共同决定。</p>
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist  tblist2-1" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th class="biao">
+								</th><th>LV1
+								</th><th>LV2
+								</th><th>LV3
+							</th></tr>
+							<tr>	
+								<td class="kb">一级投资人</td>
+								<td>1%</td>
+								<td>1.1%</td>
+								<td>1.2%</td>
+							</tr>
+							<tr>	
+								<td class="kb">二级投资人</td>
+								<td>0.6%</td>
+								<td>0.7%</td>
+								<td>0.8%</td>
+							</tr>
+							<tr>	
+								<td class="kb">三级投资人</td>
+								<td>0.4%</td>
+								<td>0.5%</td>
+								<td>0.8%</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<p>举个例子：假如每个投资人都投资10000元，那么获得分红如下图</p>					
+				<form id="statue" name="form1" method="post" action="" onSubmit="return false">
+					<table class="tblist  tblist2-1  tblist2-2" cellspacing="1" align="center" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<th>
+								</th><th><ol>LV1</ol><ol>获得分红</ol>
+								</th><th><ol>LV2</ol><ol>获得分红</ol>
+								</th><th><ol>LV3</ol><ol>获得分红</ol>
+							</th></tr>
+							<tr>	
+								<td class="kb"><ol>一级投资人</ol><ol>投1万</ol></td>
+								<td>100</td>
+								<td>110%</td>
+								<td>120</td>
+							</tr>
+							<tr>	
+								<td class="kb"><ol>二级投资人</ol><ol>投1万</ol></td>
+								<td>60</td>
+								<td>70</td>
+								<td>80</td>
+							</tr>
+							<tr>	
+								<td class="kb"><ol>三级投资人</ol><ol>投1万</ol></td>
+								<td>40</td>
+								<td>50</td>
+								<td>60</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</li>
+		<li>
+			<h1><span>友情提示！</span></h1>
+			<div class="detail" style="display:none;">
+				<p>1、活动期间，用户只有通过<span>【鲸鱼合伙人】活动页面</span>投资鲸鱼宝定期产品，方可获得相应数量的投资经验值。</p>
+				<p>2、用户所邀请的投资人必须通过用户的<span>专属二维码或邀请链接</span>进行注册，并通过【鲸鱼合伙人】活动页面投资鲸鱼宝定期产品，方可产生分红。</p>
+				<p>3、活动期间，如果发现违法违规行为，平台将取消该用户的所有奖励及参与资格。本活动由鲸鱼金融保留最终解释权。</p>
+			</div>
+		</li>
+	</ul>
+	<script>
+		$(function(){
+			$(".gonglue-list li h1").click(function(){
+				$(this).toggleClass('s-easy');
+				$(this).parent("li").siblings("li").find("h1").removeClass('s-easy');
+				$(this).parent("li").find(".detail").toggleClass('s-block');
+				$(this).parent("li").siblings("li").find(".detail").removeClass('s-block');
+				$(this).parent("li").siblings("li").find("h1").removeClass('no-jiao');
+			})
+			
+			$(".gonglue-list li:last-child h1").click(function(){
+				$(this).toggleClass('no-jiao');
+			})
+		})
+	</script>	
+	
+	<a class="phone" href="tel:400-840-2015"><img src="__PUBLIC__/static/JinrPartner/imgs/phone.png" alt=""></a>
+	<p style="height: 60px;"></p>
+	
+</div>
+
+
+
+
+
+<div id="m-body">
+	<div class="whole  whole4">
+		<ol class="rolling">
+			<img src="__PUBLIC__/static/JinrPartner/imgs/sound.png" />
+			<p class="rolling_p">
+		  <marquee  direction="left" width="100%" height="30px" scrolldelay="0" scrollamount="4">
+					<ul class="rolling_list">
+                        <li>当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人</li>
+                        <li>累计发放分红<span
+                                class="yuan">{$totalBonus|default=0}</span>元</li>
+					</ul>
+		  </marquee>
+			</p>
+		</ol>
+		<p style="height: 30px;"></p>
+		
+		<div class="touzi-img  fenxiang">
+			<img src="__PUBLIC__/static/JinrPartner/imgs/fenxiang.jpg" alt=""/>
+            <a class="liaojie1" href="{$getPartnerUrl|default='javascript:;'}" alt="了解鲸鱼合伙人"></a>
+            <a class="liaojie2" href="{$getJinrUrl|default='javascript:;'}" alt="了解鲸鱼宝"></a>		
+		</div>
+		
+		<div class="fx-column">
+			<h1>注册即可领5000元新手红包</h1>
+			<input id="phone" type="text" maxlength="11" placeholder='请输入您的手机号码'/>
+			<a class="btn-get">马上领5000</a>
+			<ol class="shuju">
+                <p>当前已经有<span>{$partners|default=0}</span>人加入鲸鱼合伙人</p>
+                <p>累计发放分红<span>{$totalBonus|default=0}</span>元</p>
+			</ol>
+		</div>
+		<script>
+		$(function(){
+			$(".btn-get").click(function(){									
+				var phone_reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+                var mobile = $("#phone").val();
+				if($("#phone").val()==""){
+					alert("手机号码不能为空");
+					return;
+				}else if(!phone_reg.test($("#phone").val())){ 
+					alert("手机号码格式不正确"); 
+					return;
+				}else{      /*   点击黄色按钮，有三种情况：显示非合伙人提示窗口、显示合伙人提示窗口、跳转到注册页   */	
+                    
+                    $.ajax(
+                        {
+                            "url": "/JinrPartner/Share/JoinJinr",
+                            "data": {"mobile":mobile},
+                            "type": "post",
+                            "dataType": "json",
+                            "async": true,
+                            "success": function(data) {
+                                if(data.userstatus == 1) {
+                                    //用户尚末注册
+                                    //ToDo:
+                                } else if(data.userstatus == 2) {
+                                    //用户注册但不是合伙人
+                                    $(".no-partner,.no-partner-footer").fadeIn();
+                                } else if(data.userstatus == 3) {
+                                    //用户已经是合伙人
+                                    //鲸鱼合伙人
+                                    $(".partner,.partner-footer").fadeIn();
+                                } else {
+                                    alert("系统错误，请重试");
+                                }
+                            }
+                        }
+                    );
+
+				 // window.location.href="注册页面.html";
+				}
+			});
+		})		
+		</script>
+		
+	</div>
+	
+	
+	<!-- 要想让跑马灯 循环滚动，必需加 -->		
+	<span id="tt" title="88614368" style="display:none;">88614368</span>
+	<script type="text/javascript"> 
+		/* 数每秒加1 */
+		$(function (){
+			reduceTime();
+			});
+		function reduceTime() {
+				var reduce = $("#tt").html();
+				++reduce;
+				var sec = reduce;
+	
+				var atop = $("#tt").attr("title");
+				atop = atop-86400+86400*2;
+				if(reduce != atop){
+						$("#tt").html(sec);
+				}else{
+						$("#tt").html(reduce);
+						return reduce;
+				}
+				setTimeout(reduceTime,2000);
+		}
+	</script>
+</div>
+
+</block>

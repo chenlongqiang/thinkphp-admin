@@ -1,0 +1,138 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1289
+ * Date: 16/9/18
+ * Time: 下午14:47
+ */
+
+namespace JinrPartner\Model;
+
+use Common\Base\BaseModel;
+use Think\Exception;
+
+class PartnerModel extends BaseModel
+{
+    const EVENT_KEY  = "GAME_TYPE_APP_INVITE_FRIENDS_5";
+
+    protected $_auto = array(
+        array('u_time', 'gmt_time', self::MODEL_UPDATE, 'function'),
+    );
+    /**
+     * 根据用户id获取用户经验以及等级
+     * @param int $uid
+     */
+    public function getUserInfo($uid = 0)
+    {
+        $r = $this->where(array('uid'=>intval($uid)))->field('experience,level,total_bonus')->find();
+        if (!$r) return false;
+        return array ('level'=>$r['level'],'exp'=>$r['experience'],'bonus'=>$r['total_bonus']);
+    }
+
+    /**
+     * 获取鲸鱼合伙人的列表
+     * @return array
+     */
+    public function getAllAccumulateBonus($page=1,$pageSize=5)
+    {
+        return $this->page("$page,$pageSize")->field('level,tel phone,total_bonus amount,name')->order("total_bonus desc")->select();
+    }
+
+    /**
+     * 获取我的排名相关信息
+     * @param $uid
+     * @return array
+     */
+    public function getMyRand($uid)
+    {
+        //TODO 该处需要判断redis缓存 上次计算的时间
+        $expire_time = 5*60;
+        $redis = new \Predis\Client(C('REDIS.DEFAULT'));
+        $partner_rand_settime = $redis->get('partner_rand_settime');
+
+        if (time() - $partner_rand_settime >  $expire_time)
+        {
+            M()->execute("DELETE FROM  __PREFIX__partner_rand");//清空表数据
+            M()->execute("ALTER TABLE  __PREFIX__partner_rand AUTO_INCREMENT=1");//重置主键id
+            M()->execute("INSERT INTO __PREFIX__partner_rand(`u_id`) SELECT `uid` FROM __PREFIX__partner ORDER BY total_bonus DESC");//数据导入
+            $redis->setex('partner_rand_settime',$expire_time,time());
+        }
+
+        $rand_id = M('PartnerRand')->where(array('u_id'=>array('eq',intval($uid))))->getField('rand_id');
+        $max_rand_id = M('PartnerRand')->Max('rand_id');
+        $percent = (100 - floor(($rand_id/$max_rand_id)*100));
+
+        $rand_info = array (
+            'rand'=>$rand_id,
+            'percent'=>$percent
+        );
+
+        return $rand_info;
+
+    }
+
+    /**
+     * 更新经验 以及 等级
+     * @param $invest_uid
+     * @param $money
+     */
+    public function updateInfo($invest_uid,$money)
+    {
+        try
+        {
+            //TODO
+            $this->startTrans();
+            $userInfo = $this->getUserInfo($invest_uid);
+            if (!$userInfo) return false; // 找不到信息 return
+
+            $r = $this->where(array('uid'=>intval($invest_uid)))->setInc('experience',(float)$money);//更新经验
+            $now_exp = $userInfo['exp'] +  (float)$money;
+            $my_level = self::expTolevel($now_exp);//获取对应经验的等级值
+            $rs = $this->where(array('uid'=>intval($invest_uid)))->save(array('level'=>$my_level));//更新等级
+
+            if ($r !==false  && $rs !== false)
+            {
+                $this->commit();
+                return true;
+            }
+            else
+            {
+                $this->rollback();
+                return false;
+            }
+        }catch (Exception $e) {
+            return false;
+        }
+    }
+
+    /**
+     * 通过 经验取得对应等级
+     */
+    public static function expTolevel($now_exp)
+    {
+        static $level_config ;
+        if (!$level_config) $level_config = C('JINRPARTNER.LEVLE');//获取活动利率配置
+        if (!is_array($level_config)) return false;
+        $my_level = 0;
+        foreach ($level_config as $k=>$level) {
+            list($min,$max) = explode('-',$level);
+            $flag = $max ? $now_exp < $max : true;//当max 没值时代表时最高配置，只需大于等于$min即可
+            if ($now_exp >= $min && $flag) {
+                //获取当前的经验所对应的等级
+                $my_level = $k;
+                break;
+            }
+        }
+        return $my_level;
+    }
+
+
+    /**
+     * 是否是鲸鱼合伙人
+     */
+    public function isPartner($uid)
+    {
+        $userInfo = $this->getUserInfo($uid);
+        return $userInfo && $userInfo['exp'] >= 5000 ? $userInfo : false;
+    }
+}

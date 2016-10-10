@@ -1,0 +1,13 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1543
+ * Date: 16/9/21
+ * Time: 上午9:5
+ */
+return array(
+    'API' => array(
+        'SECRET_KEY' => '12345678',
+        'SECRET_MODEL' => 'ecb',
+    )
+);

@@ -1,0 +1,247 @@
+<?php
+namespace JinrPartner\Controller;
+
+use Think\Controller;
+use JinrPartner\Logic\UserLogic;
+
+/**
+  *分享地址页面
+  *
+  * @access public
+  */
+class ShareController extends Controller
+{
+
+    const SESSION_INVITE_KEY='invite';
+    const SESSION_VERIFY_KEY = 'mobile_verify';
+
+
+    /**
+     *共享页面
+     *
+     * @return void
+     */
+    public function index()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $invite = I('invite'); //邀请人uid
+            session(self::SESSION_INVITE_KEY, $invite);
+
+            $totalRes = $huserLogic->getTotal();
+
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getPartnerUrl", U("JinrPartner/Share/getPartner"));
+            $this->assign("getJinrUrl", U("JinrPartner/Share/getJinr"));
+            $this->display("Share/index");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+
+    /**
+     *了解鲸鱼合伙人
+     *
+     * @return void
+     */
+    public function getPartner()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $totalRes = $huserLogic->getTotal();
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getJinrUrl", U("JinrPartner/Share/getJinr"));
+            $this->display("Share/getPartner");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+
+    /**
+     *了解鲸鱼
+     *
+     * @return void
+     */
+    public function getJinr()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $totalRes = $huserLogic->getTotal();
+
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->assign("getPartnerUrl", U("JinrPartner/Share/getPartner"));
+            $this->display("Share/getJinr");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+
+    /**
+     *邀请注册鲸鱼合伙人
+     *
+     * @return void
+     */
+    public function joinJinr()
+    {
+        try {
+
+            $mobile = I('post.mobile');
+            $invite = session(self::SESSION_INVITE_KEY);
+            $huserLogic = D('User', 'Logic');
+
+            //根据手机号码获取用户信息
+            $userStatus = $huserLogic->getUserStatus('', $mobile);
+            $userStatus['userstatus'] = 1;
+
+            $this->ajaxReturn($userStatus);;
+            //存在则工获取用户的相关合伙人信息,与首页的区别在于不需要进行入库判断
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+
+    /**
+     *加载用户注册页
+     *
+     * @return void
+     */
+    public function registry()
+    {
+        try {
+            $huserLogic = D('User', 'Logic');
+            $totalRes = $huserLogic->getTotal();
+                
+            $this->assign("partners", $tmpRes['partners']);
+            $this->assign("totalBonus", $tmpRes['totalBonus']);
+            $this->display("Share/Registry");
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+    
+    /**
+     *用户注册入口 
+     *
+     * @return void
+     */
+    public function doRegistry()
+    {
+        $status = false;
+        $msg = '';
+        try {
+            $phone = I('post.phone');
+            $verify = I('post.verify');
+            $pwd = I('post.pwd');
+            $verifyId = session(self::SESSION_VERIFY_KEY);
+            $huserLogic = D('User', 'Logic');
+            $res = $huserLogic->regUser($phone, $pwd, $verify, '', '' );
+        
+
+
+        } catch (\Think\Exception $e) {
+            $msg = $e->getMessage();
+        } catch(\Exception $e) {
+            $msg = $e->getMessage();
+        }
+        $result = array("status"=>$status, 'msg'=>$msg);
+        $this->ajaxReturn($result);
+    }
+
+    /**
+     *验证手机验证码
+     *
+     * @return void
+     */
+    public function sendVerify()
+    {
+        $status = false;
+        $msg = '';;
+        try {
+            $mobile = I('post.mobile');
+            
+            if (!checkPhone($mobile)) {
+                E("手机号码格式不正确");           
+            }
+            //ToDo:调用接口发送验证码并判断返回
+                
+            //成功后需要记录验证id进session;
+
+            //设置返回结果;
+            //$status = true;
+            $msg = "验证码发送成功";;
+        } catch (\Think\Exception $e) {
+            $msg = $e->getMessage();;
+        } catch (\Exception $e) {
+            $msg = $e->getMessage();
+        }
+        $result = array('status'=>$status, 'msg'=>$msg);
+        $this->ajaxReturn($result);
+    }
+    
+    /**
+     *使用正则判断参数是否正确
+     *
+     * @param string $field 判断字段
+     * @param string $reg   正则
+     * @param string $tips  提示
+     *
+     * @return void
+     */
+    public function checkVar($field, $reg, $tips)
+    {
+        try {
+            if (!$field) {
+                E("$tips不能为空");
+            } else if (!preg_match($reg, $field)) {
+                E("$tips格式不正确");
+            } else {
+                return $field;
+            }
+            
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }
+    }
+    
+    
+    /**
+     *微信获取用户微信信息测试
+     *
+     * @return void
+     */
+    public function getUserWxInfo()
+    {
+        try {
+            $hwechatOauthService = D('Wechat/WechatOauth', 'Service');
+            $code = I('get.code');
+            if (session("wx")) {
+                $wx = session("wx");
+            } else if ($code) {
+                //使用code 获取用户微信信息
+                $token = $hwechatOauthService->getAccessToken($code);
+                $userinfo = $hwechatOauthService->getUserInfo();
+            } else {
+                $redirectUriOrg = U('JinrPartner/Share/getUserWxInfo');
+                dump($redirectUriOrg);exit;
+                $redirectUri = $hwechatOauthService->getRequestCodeURL($redirectUriOrg);
+                exit;
+                redirect($redirectUri);
+                redirect($redirectUri);
+                exit;
+            }
+        } catch (\Think\Exception $e) {
+            E($e->getMessage());
+        }    
+    }
+    
+    
+}

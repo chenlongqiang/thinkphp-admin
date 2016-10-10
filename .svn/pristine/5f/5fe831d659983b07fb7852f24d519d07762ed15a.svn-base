@@ -1,0 +1,352 @@
+<extend name="Common:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading form-inline clearfix">
+                    <div class="form-group pull-left">
+                        <label class="sr-only"></label>
+                        <a href="#edit_menu_layer" data-toggle="modal" class="btn btn-outline btn-success" data-type="add_top">
+                            <i class="fa fa-plus fa-fw"></i> 添加顶级菜单
+                        </a>
+                    </div>
+                    <div class="form-group pull-right">
+                        <label class="sr-only"></label>
+                        <a href="javascript:history.back(-1)" class="btn btn-outline btn-link">
+                            返回
+                        </a>
+                    </div>
+                    <div class="form-group pull-right">
+                        <label class="sr-only"></label>
+                        <a href="{:U('System/menuList')}" class="btn btn-outline btn-link">
+                            回到顶级菜单
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-heading clearfix">
+                    <form class="form-inline pull-left" role="form" action="__SELF__" id="form_filter" method="post">
+                        <!--
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <select name="filter[status]" class="form-control" onchange="$('#form_filter').submit();">
+                                <option value="">状态</option>
+                                <option value="1" {$filter[status]|option_selected=###,1}>启用</option>
+                                <option value="2" {$filter[status]|option_selected=###,2}>禁用</option>
+                            </select>
+                        </div>
+                        -->
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <select class="form-control" name="filter[option]">
+                                <option value="name" {$filter[option]|option_selected=###,"name"}>菜单名</option>
+                                <option value="id" {$filter[option]|option_selected=###,"id"}>ID</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="keyword">
+                            <input type="text" class="form-control" name='filter[keyword]' value="{$filter[keyword]|hs}" placeholder="全局菜单搜索">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-search fa-fw"></i> 搜 索
+                        </button>
+                        <input type="hidden" id="reset" name="reset" value="0">
+                        <input type="hidden" id="sub_menu" name="filter[pid]">
+                        <button type="submit" class="btn btn-primary" onclick="$('#reset').val('1')">
+                            <i class="fa fa-refresh fa-fw"></i> 重 置
+                        </button>
+                    </form>
+
+                    <!--<div class="pull-right" style="margin-left: 5px;">-->
+                        <!--<a href="{:U('')}" class="btn btn-danger">-->
+                            <!--<span class="glyphicon glyphicon-export"></span> -->
+                        <!--</a>-->
+                    <!--</div>-->
+                </div>
+
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>菜单名</th>
+                                    <th>状态</th>
+                                    <th>菜单路径</th>
+                                    <th>排序</th>
+                                    <th>菜单图标</th>
+                                    <th>层级</th>
+                                    <th>父级菜单ID</th>
+                                    <th style="text-align: center">操作</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <volist name="list" id="value">
+                                    <tr>
+                                        <td>{$value.id}</td>
+                                        <td>{$value.name|hs}</td>
+                                        <td>{$config[status][$value[status]]}</td>
+                                        <td>{$value.path|hs}</td>
+                                        <td>{$value.sort}</td>
+                                        <td>{$value.icon|hs}</td>
+                                        <td>{$value.level}</td>
+                                        <td>{$value.pid}</td>
+                                        <td style="text-align: center">
+                                            <div class="btn-group" role="group">
+                                                <button class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown" aria-expanded="false">
+                                                    更多 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <!--<li role="presentation" class="dropdown-header">操作</li>-->
+                                                    <li role="presentation">
+                                                        <a href="#edit_menu_layer" data-toggle="modal" data-id="{$value.id}" data-status="{$value.status}" data-name="{$value.name|hs}" data-path="{$value.path|hs}" data-level="{$value.level}" data-pid="{$value.pid}" data-sort="{$value.sort}" data-icon="{$value.icon|hs}" data-type="edit">编辑</a>
+                                                    </li>
+
+                                                    <li class="divider"></li>
+                                                    <!--<li role="presentation" class="dropdown-header">子菜单</li>-->
+                                                    <li role="presentation">
+                                                        <a href="#" data-id="{$value.id}" data-level="{$value.level}" class="see_sub_menu">查看子菜单</a>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <a href="#edit_menu_layer" data-toggle="modal" data-id="{$value.id}" data-status="{$value.status}" data-name="{$value.name|hs}" data-path="{$value.path|hs}" data-level="{$value.level}" data-pid="{$value.pid}" data-sort="{$value.sort}" data-icon="{$value.icon|hs}" data-type="add_sub">添加子菜单</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" data-href="{:U('System/menuStatus', array('id' => $value[id], 'now_status' => $value[status]))}" data-word="{$config[btn_word][$value[status]]}" class="status_confirm btn btn-xs {$config[btn_class][$value[status]]}" data-toggle="modal" data-target="#common_confirm_modal">{$config[btn_word][$value[status]]}</button>
+                                            <button type="button" data-href="{:U('System/menuDelete', array('id' => $value[id]))}" class="delete_confirm btn btn-xs btn-danger" data-toggle="modal" data-target="#common_confirm_modal">删除</button>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                    <!-- 分页 -->
+                    <div class="pagination">{$page}</div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+
+    <!-- 添加/编辑弹层 -->
+    <div class="modal fade" id="edit_menu_layer" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <form action="{:U('System/menuEdit')}" class="form-horizontal" method="post">
+                    <div class="modal-body">
+
+                        <input class="form-control" name="val[id]" type="hidden">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">菜单名:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[name]" type="text" data-rule="required;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">状态:</label>
+                            <div class="col-sm-6">
+                                <div class="btn-group" style="">
+                                    <select class="table-filter form-control input-sm" name="val[status]" data-rule="required;">
+                                        <option value="1">启用</option>
+                                        <option value="2">禁用</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">菜单路径:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[path]" type="text" placeholder="如:System/menuList" data-rule="required;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">排序:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[sort]" type="text" placeholder="数字" data-rule="integer[+0];required;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">菜单图标:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[icon]" type="text" placeholder="fa-search">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">层级:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[level]" type="text" data-rule="integer[+];required;" readonly>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">父级菜单ID:</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name="val[pid]" type="text" data-rule="integer[+0];required;" readonly>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">确定</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            //查看子菜单
+            //1. 清空其它过滤条件
+            //2. 设置pid
+            clean_filter = function(){
+                $('#form_filter input[name="filter[keyword]"]').val('');
+            };
+            $('.see_sub_menu').on('click', function(){
+                clean_filter();
+
+                $level = $(this).data('level');
+                if ($level == 3) {
+                    Common.alert({
+                        title: "提示",
+                        message: "目前仅支持3级菜单!"
+                    });
+                    return false;
+                }
+
+                $id = $(this).data('id');
+                $('#form_filter input[name="filter[pid]"]').val($id);
+                $('#form_filter').submit();
+            });
+
+            //状态修改
+            $('.status_confirm').on('click', function(){
+                $word = $(this).attr('data-word');
+                $href = $(this).attr('data-href');
+
+                Common.confirm({
+                    title: "状态修改",
+                    message: "是否" + $word,
+                    operate: function (result) {
+                        if (result) {
+                            window.location = $href;
+                        } else {
+                            console.log('false');
+                        }
+                    }
+                })
+            });
+
+            //删除数据
+            $('.delete_confirm').on('click', function(){
+                $href = $(this).attr('data-href');
+
+                Common.confirm({
+                    title: "删除数据",
+                    message: "确定删除吗?",
+                    operate: function (result) {
+                        if (result) {
+                            window.location = $href;
+                        } else {
+                            console.log('false');
+                        }
+                    }
+                })
+            });
+
+            //modal 事件定义
+            edit_menu_layer = {
+                bind:function(){
+                    //添加/编辑数据
+                    $("#edit_menu_layer").on("show.bs.modal", function(e) {
+
+                        //modal init
+                        edit_menu_layer.init();
+
+                        // 这里的btn就是触发元素，即你点击的按钮
+                        $btn = $(e.relatedTarget);
+                        $type = $btn.data("type");
+
+                        // title
+                        switch ($type) {
+                            case 'add_top':
+                                $title = '添加顶级菜单';
+                                $level = 1;
+                                $pid = 0;
+                                break;
+                            case 'add_sub':
+                                $title = '添加子菜单';
+                                $level = $btn.data("level");
+                                $id = $btn.data("id");
+                                $level = $level + 1;
+                                $pid = $id;
+
+                                if ($level > 3) {
+                                    Common.alert({
+                                        title: "提示",
+                                        message: "目前仅支持3级菜单!"
+                                    });
+                                    return false;
+                                }
+
+                                break;
+                            case 'edit':
+                                $title = '编辑';
+                                $level = $btn.data("level");
+                                $pid = $btn.data("pid");
+
+                                $id = $btn.data("id");
+                                $status = $btn.data("status");
+                                $name = $btn.data("name");
+                                $path = $btn.data("path");
+                                $sort = $btn.data("sort");
+                                $icon = $btn.data("icon");
+                                $('#edit_menu_layer input[name="val[id]"]').val($id);
+                                $('#edit_menu_layer select[name="val[status]"]').val($status);
+                                $('#edit_menu_layer input[name="val[name]"]').val($name);
+                                $('#edit_menu_layer input[name="val[path]"]').val($path);
+                                $('#edit_menu_layer input[name="val[sort]"]').val($sort);
+                                $('#edit_menu_layer input[name="val[icon]"]').val($icon);
+                                break;
+                        }
+
+                        $('#edit_menu_layer .modal-title').html($title);
+                        $('#edit_menu_layer input[name="val[level]"]').val($level);
+                        $('#edit_menu_layer input[name="val[pid]"]').val($pid);
+
+                    });
+                },
+                //modal数据初始化
+                init:function(){
+                    $('#edit_menu_layer input[name="val[id]"]').val('');
+                    $('#edit_menu_layer input[name="val[name]"]').val('');
+                    $('#edit_menu_layer select[name="val[status]"]').val('1');
+                    $('#edit_menu_layer input[name="val[path]"]').val('');
+                    $('#edit_menu_layer input[name="val[sort]"]').val('');
+                    $('#edit_menu_layer input[name="val[icon]"]').val('');
+                }
+            };
+
+            //模态窗事件绑定
+            edit_menu_layer.bind();
+
+        });
+    </script>
+</block>

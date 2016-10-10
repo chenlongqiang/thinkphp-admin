@@ -1,0 +1,58 @@
+<li class="mli">
+    <h1 class="mk mk3"><img src="__PUBLIC__/static/JinrPartner/imgs/ms3.jpg" alt=""/><span>累计获得分红：<a>{$userInfo['bonus']}元</a></span></h1>
+    <div class="detail  dtt" style="display:none;">
+        <ol class="column">
+            <h2>我的分红记录</h2>
+            <volist name="accumulateBonus" id="v">
+                <div class="kuang k{$key+1}">
+                    <dl>
+                        <dt><img src="__PUBLIC__/static/JinrPartner/imgs/people.png" alt=""/></dt>
+                        <dd>
+                            <p>您有<a>{$v['numbers']}</a>个{$v['level']}级投资人</p>
+                            <p>累计为您赚取<a>{$v['amount']}</a>元分红</p>
+                        </dd>
+                    </dl>
+                    <p class="di"></p>
+                </div>
+            </volist>
+        </ol>
+        <ol class="column">
+            <h2>累计分红记录</h2>
+            <div class="paiming">
+                <h3>您当前排名第<span>{$myRand['rand']}</span>，财富超过了<span>{$myRand['percent']}%</span>的鲸鱼合伙人</h3>
+                <ul id="all_bonus_scroll" data-status="off">
+                    <volist name="allAccumulateBonus" id="v">
+                        <li><label>{$key+1}</label><a>LV{$v['level']}</a> <span class="name">{$v['name']}</span> <span>{$v['phone']|tel_privacy}</span> <span>累计分红{$v['amount']}元</span></li>
+                    </volist>
+                </ul>
+            </div>
+        </ol>
+    </div>
+</li>
+
+<script>
+    $(function(){
+        var all_bonus_scroll_base_url = '{:U('JinrPartner/center/getallaccumulatebonus')}';
+        $('#all_bonus_scroll').on('scroll',function(){
+            var _this= $(this),page=1,state = _this.data('status');
+            var nScrollHight = _this[0].scrollHeight;
+            var nScrollTop = _this[0].scrollTop;
+            var nDivHight = _this.height();
+            var current = 1- (nScrollTop + nDivHight)/nScrollHight;
+            if(current < 0.2 && state=='off') {
+                page++;_this.data('status','on');
+                $.post(all_bonus_scroll_base_url,{page:page},function(data){
+                    if (data.status==1) {
+                        _this.append(data.con);
+                    }else {
+                        _this.unbind('scroll');
+                    }
+                    _this.data('status','off');
+                });
+            }
+        });
+            //console.log($('.paiming').offset().top);
+
+    })
+
+</script>

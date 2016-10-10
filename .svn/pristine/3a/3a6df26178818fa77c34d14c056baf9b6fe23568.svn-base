@@ -1,0 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: luka-chen
+ * Date: 16/9/13
+ * Time: 下午2:10
+ */
+return array(
+    'JINRPARTNER' => array(
+        'TEST' => 'xx'
+    )
+);

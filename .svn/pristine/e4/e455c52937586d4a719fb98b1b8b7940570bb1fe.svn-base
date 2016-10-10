@@ -1,0 +1,13 @@
+<extend name="Common:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">luka-chen 早上好! <small><?php echo date('Y-m-d H:i:s') ?></small></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">xxx</div>
+        <div class="col-lg-4">xxx</div>
+    </div>
+</block>
