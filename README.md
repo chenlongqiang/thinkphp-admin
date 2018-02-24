@@ -1,18 +1,18 @@
-﻿# jinr活动系统,开发约定如下:
+﻿# 开发约定如下:
 
 ## 文件结构说明
 
 * *1. 通用说明:*
-* 以活动为单位分模块,各模块包含自己的一套 Controller,Model,View,Logic 等
+* 分模块,各模块包含自己的一套 Controller,Model,View,Logic 等
 * Common/Model 为公共模型
 * 各模块如需要使用公共模型并且需要进行功能扩展,如:UserModel,请务必继承公共模型后再进行本模块关于该模型的功能扩展,误重复拷贝同一模型定义重复方法
 * 模块中的特定的模型,如:Demo模块下的一个TestModel仅可能在本模块中使用,则直接写在本模块下,如TestModel可能被其它某块调用,则参考上一条
 
 * *2. Admin,Common,EventApi,Api,Demo说明:*
-* Admin 活动系统后台
+* Admin 系统后台
 * Common 包含公共函数/配置文件(包函模块配置)/公共模型/公共服务
-* EventApi 活动事件Api,主站的事件触发,如:注册,投资,邀请等..
-* Api 活动系统Api,如:添加红包,添加体验金,送卡包等..
+* EventApi 事件Api
+* Api 系统Api
 * Demo 活动模板目录,新开项目可拷贝该目录并重命名,注意命名空间的修改
 
 ## 配置文件说明
